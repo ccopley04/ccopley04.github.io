@@ -7,21 +7,12 @@
     <meta name="description" content="..." />
     <title>Caleb Copley's Code Portfolio</title>
     <style>
-      #headshot {
-        width: 200px;
-        vertical-align: top;
-        display: inline-block;
-      }
-      .vertical-container {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 5px;
-        align-items: start;
-      }
       #description {
         vertical-align: top;
         display: inline-block;
-        margin-right: 500px;
+        margin-left: 135px;
+        margin-right: 135px;
+        font-size: 18px;
       }
       #name {
         font-size: 30px;
@@ -30,21 +21,48 @@
         background-color: blue;
         height: 5px;
       }
+      #intro {
+        padding-top: 50px;
+        margin: auto;
+        text-align: center;
+      }
+      body {
+        background-color: lightblue;
+      }
+      #headshot {
+        width: 125px;
+        padding-top: 10px;
+        border-radius: 50%;
+      }
+      #horizontal-container {
+        display: flex;
+        text-align: center;
+      }
+      #heading {
+        position: fixed;
+        display: flex;
+      }
     </style>
   </head>
-  <body>
-    <div id="root"></div>
+  <body background-color="lightblue">
     <script src="index.js"></script>
-    <div class="vertical-container">
-      <img id="headshot" src="Images/headshot.jpg" class="image-left" />
+    <div id="heading">
+      <image id="headshot" src="./Images/headshot.jpg"></image>
+      <div style="padding-top: 20px">
+        Service Powered By Creativity And Science
+      </div>
+    </div>
+    <div id="intro">
       <div class="horizontal-container">
+        <div style="font-size: 125px">Caleb Copley</div>
+      </div>
+      <div style="text-align: center">
         <span id="description">
-          <strong id="name">Caleb Copley</strong>
           <hr id="intro-separator" />
-          About: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Pariatur aliquam tempore maiores aspernatur. Commodi sunt quod libero,
-          dolorem neque sit unde atque facilis cum exercitationem quasi porro
-          dolores quae sapiente error accusamus laboriosam, ullam quibusdam. At,
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          aliquam tempore maiores aspernatur. Commodi sunt quod libero, dolorem
+          neque sit unde atque facilis cum exercitationem quasi porro dolores
+          quae sapiente error accusamus laboriosam, ullam quibusdam. At,
           voluptatum quo? Quia sed aspernatur mollitia officia odio eius ullam
           adipisci? Nulla aspernatur odit alias labore omnis dignissimos ea
           fugiat delectus debitis voluptatibus, ratione itaque cum voluptatem
@@ -67,5 +85,7 @@
         </span>
       </div>
     </div>
+    <div style="padding: 500px"></div>
+    <div>Next Page</div>
   </body>
 </html>
