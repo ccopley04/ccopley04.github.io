@@ -42,14 +42,29 @@
         position: fixed;
         display: flex;
       }
+      #heading div {
+        padding-top: 20px;
+        height: 25px;
+        color: lightblue;
+        background-color: black;
+        background-clip: content-box;
+      }
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: lightblue;
+      }
     </style>
   </head>
   <body background-color="lightblue">
     <script src="index.js"></script>
     <div id="heading">
       <image id="headshot" src="./Images/headshot.jpg"></image>
-      <div style="padding-top: 20px">
-        Service Powered By Creativity And Science
+      <div>
+        Service Powered By Creativity And Science |&ensp;&ensp;<a href="#intro"
+          >Home</a
+        >&ensp;&ensp;|&ensp;&ensp;<a href="#projects">Projects</a
+        >&ensp;&ensp;|&ensp;&ensp;<a href="#contacts">Contacts</a>&ensp;&ensp;|
       </div>
     </div>
     <div id="intro">
@@ -86,6 +101,7 @@
       </div>
     </div>
     <div style="padding: 500px"></div>
-    <div>Next Page</div>
+    <div id="projects">Next Page</div>
+    <div id="contacts"></div>
   </body>
 </html>
