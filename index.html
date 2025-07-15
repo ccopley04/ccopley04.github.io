@@ -8,10 +8,10 @@
     <title>Caleb Copley's Code Portfolio</title>
     <style>
       #description {
-        vertical-align: top;
+        text-align: right;
         display: inline-block;
-        margin-left: 135px;
-        margin-right: 135px;
+        margin-left: 20px;
+        margin-right: 20px;
         font-size: 18px;
       }
       #name {
@@ -22,21 +22,19 @@
         height: 5px;
       }
       #intro {
-        padding-top: 50px;
-        margin: auto;
-        text-align: center;
+        padding-top: 100px;
+        display: flex;
       }
       body {
         background-color: lightblue;
       }
-      #headshot {
+      #icon {
         width: 125px;
         padding-top: 10px;
         border-radius: 50%;
       }
       #horizontal-container {
         display: flex;
-        text-align: center;
       }
       #heading {
         position: fixed;
@@ -49,6 +47,12 @@
         background-color: black;
         background-clip: content-box;
       }
+      #headshot{
+        width:224px;
+        height:340px;
+        padding-top: 10px;
+        padding-left: 10px;
+      }
       a {
         text-decoration: none;
         font-weight: bold;
@@ -59,7 +63,7 @@
   <body background-color="lightblue">
     <script src="index.js"></script>
     <div id="heading">
-      <image id="headshot" src="./Images/headshot.jpg"></image>
+      <image id="icon" src="./Images/headshot.jpg"></image>
       <div>
         Service Powered By Creativity And Science |&ensp;&ensp;<a href="#intro"
           >Home</a
@@ -69,9 +73,7 @@
     </div>
     <div id="intro">
       <div class="horizontal-container">
-        <div style="font-size: 125px">Caleb Copley</div>
-      </div>
-      <div style="text-align: center">
+        <div style="font-size: 100px; text-align: right;">Caleb Copley</div>
         <span id="description">
           <hr id="intro-separator" />
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
@@ -97,8 +99,10 @@
           vitae molestiae aliquid amet fugiat tempora sit cupiditate. Atque
           labore voluptate iste quas, quis id, dignissimos nostrum, eos velit ab
           sint.
+          <hr id="intro-separator"/>
         </span>
       </div>
+      <img src="./Images/seriousHeadshot.JPG" id="headshot"></img>
     </div>
     <div style="padding: 500px"></div>
     <div id="projects">Next Page</div>
