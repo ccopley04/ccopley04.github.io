@@ -6,65 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="..." />
     <title>Caleb Copley's Code Portfolio</title>
+    <link rel="stylesheet" href="header.css">
+     <link rel="stylesheet" href="intro.css">
     <style>
-      #description {
-        text-align: right;
-        display: inline-block;
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 18px;
-      }
-      #name {
-        font-size: 30px;
-      }
-      #intro-separator {
-        background-color: blue;
-        height: 5px;
-      }
-      #intro {
-        padding-top: 100px;
-        display: flex;
-      }
       body {
         background-color: lightblue;
-      }
-      #icon {
-        width: 125px;
-        padding-top: 10px;
-        border-radius: 50%;
       }
       #horizontal-container {
         display: flex;
       }
-      #heading {
-        position: fixed;
-        display: flex;
-      }
-      #heading div {
-        padding-top: 20px;
-        height: 25px;
-        color: lightblue;
-        background-color: black;
-        background-clip: content-box;
-      }
-      #headshot{
-        width:224px;
-        height:340px;
-        padding-top: 10px;
-        padding-left: 10px;
-      }
-      a {
-        text-decoration: none;
-        font-weight: bold;
-        color: lightblue;
-      }
     </style>
   </head>
   <body background-color="lightblue">
-    <script src="index.js"></script>
     <div id="heading">
-      <image id="icon" src="./Images/headshot.jpg"></image>
-      <div>
+      <image src="./Images/headshot.jpg"></image>
+      <div id="links">
         Service Powered By Creativity And Science |&ensp;&ensp;<a href="#intro"
           >Home</a
         >&ensp;&ensp;|&ensp;&ensp;<a href="#projects">Projects</a
@@ -73,7 +29,7 @@
     </div>
     <div id="intro">
       <div class="horizontal-container">
-        <div style="font-size: 100px; text-align: right;">Caleb Copley</div>
+        <div id="nameTitle">Caleb Copley</div>
         <span id="description">
           <hr id="intro-separator" />
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
