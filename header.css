@@ -1,0 +1,28 @@
+#heading {
+  position: fixed;
+  display: flex;
+}
+#heading img {
+  width: 15vmin;
+  height: 15vmin;
+  border-radius: 50%;
+  padding-top: 10px;
+}
+#heading {
+  position: fixed;
+  display: flex;
+}
+#heading div {
+  font-size: 2vh;
+  padding-top: 2vh;
+  height: 3vh;
+  width: fit-content;
+  color: lightblue;
+  background-color: black;
+  background-clip: content-box;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: lightblue;
+}

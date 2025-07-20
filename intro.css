@@ -1,0 +1,24 @@
+#intro-separator {
+  background-color: blue;
+  height: 0.3vh;
+}
+#intro {
+  padding-top: 100px;
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  text-align: right;
+}
+#headshot {
+  width: 18vmax;
+  height: 30vmax;
+}
+#intro #nameTitle {
+  font-size: 5vmax;
+  padding-right: 1vw;
+}
+#intro #description {
+  display: inline-block;
+  font-size: 1vmax;
+  padding-right: 1vw;
+}
