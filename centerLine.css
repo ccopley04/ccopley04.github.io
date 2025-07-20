@@ -1,0 +1,12 @@
+#projects #centerLine {
+  border-left: 5px solid black;
+  height: 1200px;
+  margin-left: 10vw;
+}
+
+#projects #project {
+  width: 35vw;
+  height: 150px;
+  background-color: white;
+  margin-left: 5vw;
+}
