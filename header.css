@@ -15,8 +15,8 @@
 #heading div {
   font-size: 2vh;
   padding-top: 2vh;
-  height: 3vh;
-  width: fit-content;
+  height: fit-content;
+  width: 65vw;
   color: lightblue;
   background-color: black;
   background-clip: content-box;
