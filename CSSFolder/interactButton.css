@@ -1,0 +1,15 @@
+a #redirectLink {
+  color: black;
+}
+.redirectButton {
+  background-color: white;
+  width: 15vw;
+  height: 10vh;
+  font-size: 2vmax;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#leftmost {
+  margin-left: 27vw;
+}

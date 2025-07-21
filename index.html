@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="..." />
     <title>Caleb Copley's Code Portfolio</title>
-    <link rel="stylesheet" href="header.css">
-     <link rel="stylesheet" href="intro.css">
-     <link rel="stylesheet" href="centerLine.css">
+    <link rel="stylesheet" href="/CSSFolder/centerLine.css">
+     <link rel="stylesheet" href="/CSSFolder/header.css">
+     <link rel="stylesheet" href="/CSSFolder/intro.css">
+     <link rel="stylesheet" href="/CSSFolder/interactButton.css">
     <style>
       body {
         background-color: lightblue;
@@ -20,7 +21,7 @@
   </head>
   <body background-color="lightblue">
     <div id="heading">
-      <image src="./Images/headshot.jpg"></image>
+      <image src="./Images/headshot.jpg">
       <div id="links">
         Service Powered By Creativity And Science |&ensp;&ensp;<a href="#intro"
           >Home</a
@@ -61,13 +62,18 @@
 
       </div>
       <img src="./Images/seriousHeadshot.JPG" id="headshot"></img>
+    
     </div>
-    <p style="background-color: white"><a style="color:black"target="_blank" href="/Resume-Caleb_Copley.pdf">Resume</a></p>
+
+    <a id="redirectLink" target="_blank" href="/Resume-Caleb_Copley.pdf"><button class="redirectButton" id="leftmost">Resume</button></a>
+   <a id="redirectLink" target="_blank"><button class="redirectButton">Placeholder</button></a>
+   <a id="redirectLink" target="_blank"><button class="redirectButton">Placeholder</button></a>
     <div id="projects" style="display:flex">
       <div id="project" style="margin-top:150px">Project 1</div>
       <div id="centerLine">
         <div id="project" style="margin-top:450px">Project 2</h2>
       </div>
     <div id="contacts"></div>
+    <script src="interactButtons.js"></script>
   </body>
 </html>
