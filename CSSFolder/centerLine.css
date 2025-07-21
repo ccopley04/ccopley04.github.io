@@ -10,3 +10,16 @@
   background-color: white;
   margin-left: 5vw;
 }
+#projectHeader {
+  margin-top: 200px;
+  background-color: white;
+  border: 0.5vw solid black;
+  width: 33vw;
+  height: 15vh;
+  margin-left: 33vw;
+  font-size: 6.8vw;
+}
+
+#divider {
+  height: 5px;
+}
