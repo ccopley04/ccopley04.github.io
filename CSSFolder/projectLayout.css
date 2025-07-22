@@ -10,8 +10,8 @@
   margin-left: 7.5vw;
   margin-right: 7.5vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1vh 1fr;
+  grid-template-columns: 24vw 10vw;
+  grid-template-rows: 1vh 1vh 1fr;
   border: 0.2vw solid black;
   font-size: 1.1vmax;
 }
