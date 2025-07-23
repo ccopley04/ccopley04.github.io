@@ -21,3 +21,11 @@
   font-size: 1vmax;
   padding-right: 1vw;
 }
+
+#intro #description #linkPic {
+  width: 30vw;
+  height: 17vw;
+  margin-left: 35vw;
+  opacity: 0;
+  border: 0.4vw solid blue;
+}
