@@ -25,7 +25,7 @@ function createProjectElement(
   const date = document.createElement("div");
   date.textContent = dateText;
   date.style =
-    "margin-right:2px; height:fit-content; width:fit-content; grid-column: 3; grid-row:1";
+    "margin-right:2px; height:1.8vh; width:fit-content; grid-column: 3; grid-row:1; text-align:right";
   projectDiv.append(date);
 
   const underline = document.createElement("hr");
