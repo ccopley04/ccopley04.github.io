@@ -5,13 +5,13 @@
 
 #projects .project {
   width: 35vw;
-  height: 30vh;
+  height: 31vh;
   background-color: white;
   margin-left: 7.5vw;
   margin-right: 7.5vw;
   display: grid;
-  grid-template-columns: 19.9vw 3.5vw 11.8vw;
-  grid-template-rows: 1vh 1vh 1fr;
+  grid-template-columns: 19.9vw 4vw 11vw;
+  grid-template-rows: 2vh 1vh 1fr;
   border: 0.2vw solid black;
   font-size: 1.1vmax;
 }

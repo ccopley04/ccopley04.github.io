@@ -1,28 +1,31 @@
-#heading {
-  position: fixed;
-  display: flex;
-}
 #heading img {
-  width: 15vmin;
-  height: 15vmin;
+  width: 10vmin;
+  height: 10vmin;
   border-radius: 50%;
-  padding-top: 10px;
+  border: 7px solid black;
+  z-index: 2;
+  position: absolute;
 }
 #heading {
   position: fixed;
-  display: flex;
+  display: grid;
 }
-#heading div {
+#heading #links {
   font-size: 2vh;
-  padding-top: 2vh;
   height: fit-content;
-  width: 65vw;
+  width: 70vw;
   color: lightblue;
   background-color: black;
   background-clip: content-box;
+  z-index: 1;
+  position: absolute;
+  margin-left: 6vmin;
 }
 a {
   text-decoration: none;
   font-weight: bold;
   color: lightblue;
+}
+#heading #text {
+  margin-left: 6vmin;
 }
