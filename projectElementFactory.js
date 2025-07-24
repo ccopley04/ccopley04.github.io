@@ -1,6 +1,8 @@
 const leftSide = document.getElementById("leftProjects");
 const rightSide = document.getElementById("rightProjects");
 
+let phone = window.innerWidth < window.innerHeight;
+
 function createProjectElement(
   pos,
   dateText,
@@ -23,9 +25,7 @@ function createProjectElement(
   const date = document.createElement("div");
   date.textContent = dateText;
   date.style =
-    "margin-right:2px; height:fit-content; width:fit-content; position: absolute;" +
-    "justify-self: end;" +
-    "align-self: start;";
+    "margin-right:2px; height:fit-content; width:fit-content; grid-column: 3; grid-row:1";
   projectDiv.append(date);
 
   const underline = document.createElement("hr");
@@ -33,15 +33,19 @@ function createProjectElement(
     "background-color: black;" + "height: 0.2vh; width:34.93vw; grid-row:2";
   projectDiv.append(underline);
 
-  const image = document.createElement("img");
-  image.src = imageSource;
-  image.style =
-    "height: 25vh; width:15vw; grid-row:3; grid-column:2; margin-top:10px";
-  projectDiv.append(image);
+  if (!phone) {
+    const image = document.createElement("img");
+    image.src = imageSource;
+    image.style =
+      "height: 25vh; width:15vw; grid-row:3; grid-column:2; margin-top:10px";
+    projectDiv.append(image);
+  }
 
   const description = document.createElement("div");
   description.style =
-    "grid-column:1; font-size:15px; width: 20vw; height:80;overflow:auto";
+    "grid-column:1; font-size:15px; width: " +
+    (phone ? "34vw" : "20vw") +
+    "; height:28vh;overflow:auto";
   description.textContent =
     text === ""
       ? "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur" +
