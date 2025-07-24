@@ -5,7 +5,10 @@ function createProjectElement(
   pos,
   dateText,
   titleText = "",
-  imageSource = "placeholderWebImage"
+  imageSource = "./Images/placeholderWebImage.png",
+  text = "",
+  codebaseLink = "https://github.com/ccopley04/ccopley04.github.io",
+  showcaseLink = "https://github.com/ccopley04/ccopley04.github.io"
 ) {
   const projectDiv = document.createElement("div");
 
@@ -31,28 +34,30 @@ function createProjectElement(
   projectDiv.append(underline);
 
   const image = document.createElement("img");
-  image.src = "./Images/" + imageSource + ".png";
+  image.src = imageSource;
   image.style =
-    "height: 100px; width:10vw; grid-row:3; grid-column:2; margin-top:10px";
+    "height: 25vh; width:15vw; grid-row:3; grid-column:2; margin-top:10px";
   projectDiv.append(image);
 
   const description = document.createElement("div");
   description.style =
     "grid-column:1; font-size:15px; width: 20vw; height:80;overflow:auto";
   description.textContent =
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur" +
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur" +
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur" +
-    "Lorem, ipsum dolor sit.";
+    text === ""
+      ? "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur" +
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur" +
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur" +
+        "Lorem, ipsum dolor sit."
+      : text;
 
   const projectLink = document.createElement("a");
-  projectLink.href = "https://github.com/ccopley04/ccopley04.github.io";
+  projectLink.href = showcaseLink;
   projectLink.style = "color:blue";
   projectLink.textContent = "Click Here To See The Project!";
   projectLink.target = "_blank";
 
   const codeLink = document.createElement("a");
-  codeLink.href = "https://github.com/ccopley04/ccopley04.github.io";
+  codeLink.href = codebaseLink;
   codeLink.style = "color:blue";
   codeLink.textContent = "Click Here To See The Code Base!";
   codeLink.target = "_blank";
@@ -73,8 +78,14 @@ function createProjectElement(
 createProjectElement(
   1,
   "JUNE 2025 - PRESENT",
-  "THIS WEBPAGE",
-  "placeholderWebImage"
+  "Coding Portfolio",
+  "/Images/codingPortfolioShowcase.png",
+  "This website acts as my personal coding portfolio that showcases my coding projects and directs users to their respective codebases." +
+    " I created this website using my working knowledge of JavaScript, HTML, and CSS. " +
+    "This project specifically utilizes my proficiency with front end development while also serving as an accessible gateway to my numerous coding works. " +
+    "I will update it with features and projects going forward so it remains an up to date showcase of my proficiencies.",
+  "https://github.com/ccopley04/ccopley04.github.io",
+  "https://ccopley04.github.io/"
 );
 createProjectElement(2, "Date");
 createProjectElement(3, "Date");
