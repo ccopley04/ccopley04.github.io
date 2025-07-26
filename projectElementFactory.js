@@ -25,7 +25,7 @@ function createProjectElement(
   const date = document.createElement("div");
   date.textContent = dateText;
   date.style =
-    "margin-right:2px; height:1.8vh; width:fit-content; grid-column: 3; grid-row:1; text-align:right";
+    "margin-right:2px; height:1.8vh; width:fit-content; grid-column: 3; grid-row:1; text-align:right; justify-self: flex-end;";
   projectDiv.append(date);
 
   const underline = document.createElement("hr");
@@ -37,7 +37,7 @@ function createProjectElement(
     const image = document.createElement("img");
     image.src = imageSource;
     image.style =
-      "height: 25vh; width:15vw; grid-row:3; grid-column:2; margin-top:10px";
+      "height: 25vh; width:15vw; grid-row:3; grid-column:2; margin-top:10px; border:3px solid blue";
     projectDiv.append(image);
   }
 
@@ -45,7 +45,7 @@ function createProjectElement(
   description.style =
     "grid-column:1; font-size:15px; width: " +
     (phone ? "34vw" : "20vw") +
-    "; height:28vh;overflow:auto";
+    "; height:30vh;overflow:auto";
   description.textContent =
     text === ""
       ? "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur" +
@@ -81,7 +81,7 @@ function createProjectElement(
 
 createProjectElement(
   1,
-  "JUNE 2025 - PRESENT",
+  "JULY 2025 - PRESENT",
   "Coding Portfolio",
   "/Images/codingPortfolioShowcase.png",
   "This website acts as my personal coding portfolio that showcases my coding projects and directs users to their respective codebases." +
@@ -91,6 +91,19 @@ createProjectElement(
   "https://github.com/ccopley04/ccopley04.github.io",
   "https://ccopley04.github.io/"
 );
-createProjectElement(2, "Date");
+createProjectElement(
+  2,
+  "JUNE 2025 - AUGUST 2025",
+  "Political Ideology Calculator",
+  "Images/politicalIdeologyShowcase.png",
+  "This project is a webpage that is designed to take user input on a number of political axes." +
+    " The user provides the numeric values, which generate specific " +
+    "ideologies, and the Gemini AI API is called to generate an all encompassing political ideology. " +
+    "This project was made with JavaScript, HTML, and CSS and implements coding concepts such as binary trees, API usage, " +
+    "and interpreting multi-dimensional data. The remaining updates I will continue to add are" +
+    " increasingly specific political ideology to grant the user more specificity.",
+  "https://github.com/ccopley04/PoliticalIdeologyCalculator",
+  "https://ccopley04.github.io/PoliticalIdeologyCalculator/"
+);
 createProjectElement(3, "Date");
 createProjectElement(4, "Date");
