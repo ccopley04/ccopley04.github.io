@@ -3,6 +3,23 @@ const rightSide = document.getElementById("rightProjects");
 
 let phone = window.innerWidth < window.innerHeight;
 
+function confirmDownload(linkElement, gameName, link) {
+  linkElement.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const userConfirmed = confirm(
+      "Do you want to download the current build of " + gameName + "?"
+    );
+
+    if (userConfirmed) {
+      const tempLink = document.createElement("a");
+      tempLink.href = link;
+      tempLink.download = gameName + " Build";
+      tempLink.click();
+    }
+  });
+}
+
 function createProjectElement(
   pos,
   dateText,
@@ -10,7 +27,8 @@ function createProjectElement(
   imageSource = "./Images/placeholderWebImage.png",
   text = "",
   codebaseLink = "https://github.com/ccopley04/ccopley04.github.io",
-  showcaseLink = "https://github.com/ccopley04/ccopley04.github.io"
+  showcaseLink = "",
+  download = false
 ) {
   const projectDiv = document.createElement("div");
 
@@ -55,6 +73,9 @@ function createProjectElement(
       : text;
 
   const projectLink = document.createElement("a");
+  if (download) {
+    confirmDownload(projectLink, titleText, showcaseLink);
+  }
   projectLink.href = showcaseLink;
   projectLink.style = "color:blue";
   projectLink.textContent = "Click Here To See The Project!";
@@ -105,5 +126,17 @@ createProjectElement(
   "https://github.com/ccopley04/PoliticalIdeologyCalculator",
   "https://ccopley04.github.io/PoliticalIdeologyCalculator/"
 );
-createProjectElement(3, "Date");
+createProjectElement(
+  3,
+  "January 2025 - May 2025",
+  "Mourning Brew",
+  "Images/mourningBrew.png",
+  "Mourning Brew is a small indie game developed by a team of Georgia Institute of Technology students as part of the Video Game Development Club. " +
+    "The game is an undead themed series of mini games and character interactions that follow the journey of afterlife cafe owner. As a member of " +
+    "the team, I was a software developer who was tasked with refining and designing the movement and walking animation of the diverse set of " +
+    "characters. Additionally, I worked on the mini games, most notably solo designing a rhythm based mini game in the late game.",
+  "https://github.com/cpeng87/Untitled-Ghost-Game",
+  "Build 7.22.zip",
+  true
+);
 createProjectElement(4, "Date");
