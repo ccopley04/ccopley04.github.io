@@ -132,11 +132,11 @@ createProjectElement(
   "Mourning Brew",
   "Images/mourningBrew.png",
   "Mourning Brew is a small indie game developed by a team of Georgia Institute of Technology students as part of the Video Game Development Club. " +
-    "The game is an undead themed series of mini games and character interactions that follow the journey of afterlife cafe owner. As a member of " +
+    "The game follows the journey of afterlife cafe owner through undead themed mini games and character interactions. As a member of " +
     "the team, I was a software developer who was tasked with refining and designing the movement and walking animation of the diverse set of " +
-    "characters. Additionally, I worked on the mini games, most notably solo designing a rhythm based mini game in the late game.",
+    "characters. Additionally, I worked on the mini games, most notably I solo designed a rhythm based, baking simulation for the late game content.",
   "https://github.com/cpeng87/Untitled-Ghost-Game",
-  "Build 7.22.zip",
+  "Projects/Build 7.22.zip",
   true
 );
 createProjectElement(4, "Date");
