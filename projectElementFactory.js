@@ -26,7 +26,7 @@ function createProjectElement(
   titleText = "",
   imageSource = "./Images/placeholderWebImage.png",
   text = "",
-  codebaseLink = "https://github.com/ccopley04/ccopley04.github.io",
+  codebaseLink = "",
   showcaseLink = "",
   download = ""
 ) {
@@ -72,14 +72,16 @@ function createProjectElement(
         "Lorem, ipsum dolor sit."
       : text;
 
-  const projectLink = document.createElement("a");
-  projectLink.href = showcaseLink;
-  projectLink.style = "color:blue";
-  projectLink.textContent = "Click Here To See The Project!";
-  projectLink.target = "_blank";
+  if (!(showcaseLink == "")) {
+    const projectLink = document.createElement("a");
+    projectLink.href = showcaseLink;
+    projectLink.style = "color:blue";
+    projectLink.textContent = "Click Here To See The Project!";
+    projectLink.target = "_blank";
 
-  description.appendChild(document.createElement("br"));
-  description.appendChild(projectLink);
+    description.appendChild(document.createElement("br"));
+    description.appendChild(projectLink);
+  }
 
   if (!(codebaseLink == "")) {
     const codeLink = document.createElement("a");
@@ -109,6 +111,10 @@ function createProjectElement(
   } else {
     leftSide.append(projectDiv);
   }
+
+  const centerLine = document.getElementById("centerLine");
+  centerLine.style =
+    "border-left: 5px solid black; height: " + pos * 275 + "px;";
 }
 
 createProjectElement(
@@ -179,6 +185,20 @@ createProjectElement(
 );
 createProjectElement(
   6,
+  "MAY 2025 - PRESENT",
+  "Slay The Spire Mod",
+  "./Images/stsModPic.png",
+  "This project is a character mod for the deck building game Slay the Spire. " +
+    "This mod includes my own custom character for the game, along with the character’s " +
+    "custom made deck, and was designed with the guidance of the Basic Mod tutorial. " +
+    "This project was done in Java and showcases my proficiency in object oriented programming " +
+    "as well as my ability to interpret and utilize a large library of code that I did not write. " +
+    "The remaining work on this project will consist of adding character specific cards and relics, while " +
+    "continuing to manipulate the underlying code written by the Slay the Spire developers.",
+  "https://github.com/ccopley04/STS_Mod_Tank"
+);
+createProjectElement(
+  7,
   "AUGUST 2024 - NOVEMBER 2024",
   "Humanities Website",
   "./Images/humanitiesWebsitePic.png",
