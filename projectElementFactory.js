@@ -48,7 +48,7 @@ function createProjectElement(
 
   const underline = document.createElement("hr");
   underline.style =
-    "background-color: black;" + "height: 0.2vh; width:34.93vw; grid-row:2";
+    "background-color: black;" + "height: 0.2vh; width:35.11vw; grid-row:2";
   projectDiv.append(underline);
 
   if (!phone) {
@@ -62,7 +62,7 @@ function createProjectElement(
   const description = document.createElement("div");
   description.style =
     "grid-column:1; font-size:15px; width: " +
-    (phone ? "33vw" : "20vw") +
+    (phone ? "32vw" : "20vw") +
     "; height:32vh;overflow:auto";
   description.textContent =
     text === ""
@@ -125,6 +125,33 @@ createProjectElement(
 );
 createProjectElement(
   2,
+  "JANUARY 2025 - PRESENT",
+  "Electronic ARTrium",
+  "./Images/beeMyGuidePic.png",
+  "This project is a series of works with the multi-disciplinary team Electronic ARTrium. " +
+    "This team works to create interactive, educational experiences that mix physical and digital artistic mediums. " +
+    "With this team, I worked on the Spring 2025 exhibit Bee My Guide as a member of the Visual Art and Design subteam. " +
+    "I worked on multiple character animations and digital models that were used in the creation of the ensemble of NPC characters." +
+    " Additionally, I am currently working as the team lead of the Creative Ideation subteam, working " +
+    "to create and plan for the next exhibit to be announced soon.",
+  "https://github.gatech.edu/VIP-Electronic-Artrium",
+  "https://electronicartrium.ece.gatech.edu/bee-my-guide/"
+);
+createProjectElement(
+  3,
+  "JANUARY 2025 - MAY 2025",
+  "Mourning Brew",
+  "Images/mourningBrew.png",
+  "Mourning Brew is a small indie game developed by a team of Georgia Institute of Technology students as part of the Video Game Development Club. " +
+    "The game follows the journey of afterlife cafe owner through undead themed mini games and character interactions. As a member of " +
+    "the team, I was a software developer who was tasked with refining and designing the movement and walking animation of the diverse set of " +
+    "characters. Additionally, I worked on the mini games, most notably I solo designed a rhythm based, baking simulation for the late game content.",
+  "https://github.com/cpeng87/Untitled-Ghost-Game",
+  "https://cpeng8.itch.io/mourning-brew",
+  "Projects/Build 7.22.zip"
+);
+createProjectElement(
+  4,
   "JUNE 2025 - AUGUST 2025",
   "Political Ideology Calculator",
   "Images/politicalIdeologyShowcase.png",
@@ -138,29 +165,15 @@ createProjectElement(
   "https://ccopley04.github.io/PoliticalIdeologyCalculator/"
 );
 createProjectElement(
-  3,
-  "January 2025 - May 2025",
-  "Mourning Brew",
-  "Images/mourningBrew.png",
-  "Mourning Brew is a small indie game developed by a team of Georgia Institute of Technology students as part of the Video Game Development Club. " +
-    "The game follows the journey of afterlife cafe owner through undead themed mini games and character interactions. As a member of " +
-    "the team, I was a software developer who was tasked with refining and designing the movement and walking animation of the diverse set of " +
-    "characters. Additionally, I worked on the mini games, most notably I solo designed a rhythm based, baking simulation for the late game content.",
-  "https://github.com/cpeng87/Untitled-Ghost-Game",
-  "https://cpeng8.itch.io/mourning-brew",
-  "Projects/Build 7.22.zip"
-);
-createProjectElement(
-  4,
-  "January 2025 - PRESENT",
-  "Electronic ARTrium",
-  "./Images/beeMyGuidePic.png",
-  "This project is a series of works with the multi-disciplinary team Electronic ARTrium. " +
-    "This team works to create interactive, educational experiences that mix physical and digital artistic mediums. " +
-    "With this team, I worked on the Spring 2025 exhibit Bee My Guide as a member of the Visual Art and Design subteam. " +
-    "I worked on multiple character animations and digital models that were used in the creation of the ensemble of NPC characters." +
-    " Additionally, I am currently working as the team lead of the Creative Ideation subteam, working " +
-    "to create and plan for the next exhibit to be announced soon.",
-  "https://github.gatech.edu/VIP-Electronic-Artrium",
-  "https://electronicartrium.ece.gatech.edu/bee-my-guide/"
+  5,
+  "OCTOBER 2024 - PRESENT",
+  "Three Two One...Draw!",
+  "./Images/threeTwoOneDrawPic.png",
+  "Three Two One…Draw is my own indie game that I am currently developing as the Design and Software Lead. " +
+    "It is a deck building RPG that simulates a real time Western style duel with card mechanics and thematic music and art. " +
+    "I have developed a working demo with C# and Unity that showcases the main design of the game, such as deck composition, multiple " +
+    "coroutines for time tracking, and an object oriented software architecture. I have also written a thorough game design document that " +
+    "pitches the game and is used to find other members for development, such as my new artist and story director.",
+  "https://github.com/ccopley04/ThreeTwoOneDraw",
+  "https://docs.google.com/document/d/1XyJsGtp7-YXZqh4WxrxR8-FoTENTwVMhkC44NEyeQkA/edit?usp=sharing"
 );

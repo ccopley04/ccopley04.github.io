@@ -1,16 +1,16 @@
 #projects #centerLine {
   border-left: 5px solid black;
-  height: 1200px;
+  height: 1500px;
 }
 
 #projects .project {
-  width: 35vw;
+  width: 35.2vw;
   height: 35vh;
   background-color: white;
   margin-left: 7.5vw;
   margin-right: 7.5vw;
   display: grid;
-  grid-template-columns: 19.8vw 1.1vw 14vw;
+  grid-template-columns: 20vw 1vw 14vw;
   grid-template-rows: 2vh 1vh 1fr;
   border: 0.2vw solid black;
   font-size: 1.1vmax;
