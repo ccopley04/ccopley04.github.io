@@ -62,7 +62,7 @@ function createProjectElement(
   const description = document.createElement("div");
   description.style =
     "grid-column:1; font-size:15px; width: " +
-    (phone ? "34vw" : "20vw") +
+    (phone ? "33vw" : "20vw") +
     "; height:32vh;overflow:auto";
   description.textContent =
     text === ""
@@ -81,14 +81,16 @@ function createProjectElement(
   description.appendChild(document.createElement("br"));
   description.appendChild(projectLink);
 
-  const codeLink = document.createElement("a");
-  codeLink.href = codebaseLink;
-  codeLink.style = "color:blue";
-  codeLink.textContent = "Click Here To See The Code Base!";
-  codeLink.target = "_blank";
+  if (!(codebaseLink == "")) {
+    const codeLink = document.createElement("a");
+    codeLink.href = codebaseLink;
+    codeLink.style = "color:blue";
+    codeLink.textContent = "Click Here To See The Code Base!";
+    codeLink.target = "_blank";
 
-  description.appendChild(document.createElement("br"));
-  description.appendChild(codeLink);
+    description.appendChild(document.createElement("br"));
+    description.appendChild(codeLink);
+  }
 
   if (!(download == "")) {
     const downloadLink = document.createElement("a");
@@ -147,4 +149,18 @@ createProjectElement(
   "https://github.com/cpeng87/Untitled-Ghost-Game",
   "https://cpeng8.itch.io/mourning-brew",
   "Projects/Build 7.22.zip"
+);
+createProjectElement(
+  4,
+  "January 2025 - PRESENT",
+  "Electronic ARTrium",
+  "./Images/beeMyGuidePic.png",
+  "This project is a series of works with the multi-disciplinary team Electronic ARTrium. " +
+    "This team works to create interactive, educational experiences that mix physical and digital artistic mediums. " +
+    "With this team, I worked on the Spring 2025 exhibit Bee My Guide as a member of the Visual Art and Design subteam. " +
+    "I worked on multiple character animations and digital models that were used in the creation of the ensemble of NPC characters." +
+    " Additionally, I am currently working as the team lead of the Creative Ideation subteam, working " +
+    "to create and plan for the next exhibit to be announced soon.",
+  "https://github.gatech.edu/VIP-Electronic-Artrium",
+  "https://electronicartrium.ece.gatech.edu/bee-my-guide/"
 );
