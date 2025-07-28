@@ -43,7 +43,7 @@ function createProjectElement(
   const date = document.createElement("div");
   date.textContent = dateText;
   date.style =
-    "margin-right:2px; height:1.8vh; width:fit-content; grid-column: 3; grid-row:1; text-align:right; justify-self: flex-end;";
+    "margin-right:2px; height:1.8vh; width:20vw; grid-column: 3; grid-row:1; text-align:right; justify-self: flex-end;";
   projectDiv.append(date);
 
   const underline = document.createElement("hr");
@@ -176,4 +176,17 @@ createProjectElement(
     "pitches the game and is used to find other members for development, such as my new artist and story director.",
   "https://github.com/ccopley04/ThreeTwoOneDraw",
   "https://docs.google.com/document/d/1XyJsGtp7-YXZqh4WxrxR8-FoTENTwVMhkC44NEyeQkA/edit?usp=sharing"
+);
+createProjectElement(
+  6,
+  "AUGUST 2024 - NOVEMBER 2024",
+  "Humanities Website",
+  "./Images/humanitiesWebsitePic.png",
+  "This project is a website designed and populated by a team of six for a humanities class that seeks to concisely " +
+    "describe love and analyze various works. I worked as the Team Lead and Chief Website Designer of the group and, using " +
+    "the software Weebly, designed our UI. Without any coding required, I was able to design and create a user-friendly, " +
+    "aesthetic web page that clearly showcases our group's progress and discussions. Additionally, as the Team Lead, I managed the " +
+    "members and ensured all the needed work was completed and I worked to define the creative vision for the entire project.",
+  "",
+  "https://humn2010group2.weebly.com/"
 );
