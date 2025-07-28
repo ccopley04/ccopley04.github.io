@@ -28,7 +28,7 @@ function createProjectElement(
   text = "",
   codebaseLink = "https://github.com/ccopley04/ccopley04.github.io",
   showcaseLink = "",
-  download = false
+  download = ""
 ) {
   const projectDiv = document.createElement("div");
 
@@ -63,7 +63,7 @@ function createProjectElement(
   description.style =
     "grid-column:1; font-size:15px; width: " +
     (phone ? "34vw" : "20vw") +
-    "; height:30vh;overflow:auto";
+    "; height:32vh;overflow:auto";
   description.textContent =
     text === ""
       ? "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur" +
@@ -73,13 +73,13 @@ function createProjectElement(
       : text;
 
   const projectLink = document.createElement("a");
-  if (download) {
-    confirmDownload(projectLink, titleText, showcaseLink);
-  }
   projectLink.href = showcaseLink;
   projectLink.style = "color:blue";
   projectLink.textContent = "Click Here To See The Project!";
   projectLink.target = "_blank";
+
+  description.appendChild(document.createElement("br"));
+  description.appendChild(projectLink);
 
   const codeLink = document.createElement("a");
   codeLink.href = codebaseLink;
@@ -88,9 +88,18 @@ function createProjectElement(
   codeLink.target = "_blank";
 
   description.appendChild(document.createElement("br"));
-  description.appendChild(projectLink);
-  description.appendChild(document.createElement("br"));
   description.appendChild(codeLink);
+
+  if (!(download == "")) {
+    const downloadLink = document.createElement("a");
+    downloadLink.textContent = "Click Here To Download Current Build!";
+    downloadLink.style = "color:blue";
+    confirmDownload(downloadLink, titleText, download);
+
+    description.appendChild(document.createElement("br"));
+    description.appendChild(downloadLink);
+  }
+
   projectDiv.append(description);
 
   if (pos % 2 == 0) {
@@ -136,7 +145,6 @@ createProjectElement(
     "the team, I was a software developer who was tasked with refining and designing the movement and walking animation of the diverse set of " +
     "characters. Additionally, I worked on the mini games, most notably I solo designed a rhythm based, baking simulation for the late game content.",
   "https://github.com/cpeng87/Untitled-Ghost-Game",
-  "Projects/Build 7.22.zip",
-  true
+  "https://cpeng8.itch.io/mourning-brew",
+  "Projects/Build 7.22.zip"
 );
-createProjectElement(4, "Date");
