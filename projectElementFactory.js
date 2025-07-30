@@ -62,7 +62,7 @@ function createProjectElement(
   const description = document.createElement("div");
   description.style =
     "grid-column:1; font-size:15px; width: " +
-    (phone ? "32vw" : "20vw") +
+    (phone ? "33vw" : "20vw") +
     "; height:32vh;overflow:auto";
   description.textContent =
     text === ""
@@ -137,7 +137,7 @@ createProjectElement(
   "This project is a series of works with the multi-disciplinary team Electronic ARTrium. " +
     "This team works to create interactive, educational experiences that mix physical and digital artistic mediums. " +
     "With this team, I worked on the Spring 2025 exhibit Bee My Guide as a member of the Visual Art and Design subteam. " +
-    "I worked on multiple character animations and digital models that were used in the creation of the ensemble of NPC characters." +
+    "I worked with Unity and C# to design multiple character animations that were used in the creation of the NPC characters." +
     " Additionally, I am currently working as the team lead of the Creative Ideation subteam, working " +
     "to create and plan for the next exhibit to be announced soon.",
   "https://github.gatech.edu/VIP-Electronic-Artrium",
@@ -148,13 +148,14 @@ createProjectElement(
   "JANUARY 2025 - MAY 2025",
   "Mourning Brew",
   "Images/mourningBrew.png",
-  "Mourning Brew is a small indie game developed by a team of Georgia Institute of Technology students as part of the Video Game Development Club. " +
-    "The game follows the journey of afterlife cafe owner through undead themed mini games and character interactions. As a member of " +
-    "the team, I was a software developer who was tasked with refining and designing the movement and walking animation of the diverse set of " +
+  "Mourning Brew is a small indie game developed by a team of Georgia Tech students as part of the Video Game Development Club. " +
+    "The game follows the journey of afterlife cafe owner and compiles a ton of fun mini games to be enjoyed. " +
+    "As a member of " +
+    "the team, I was a software developer who used C# and Unity and was tasked with designing the movement and walking animations of the " +
     "characters. Additionally, I worked on the mini games, most notably I solo designed a rhythm based, baking simulation for the late game content.",
   "https://github.com/cpeng87/Untitled-Ghost-Game",
   "https://cpeng8.itch.io/mourning-brew",
-  "Projects/Build 7.22.zip"
+  "./Projects/Build 7.22.zip"
 );
 createProjectElement(
   4,
