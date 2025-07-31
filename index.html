@@ -11,25 +11,19 @@
      <link rel="stylesheet" href="/CSSFolder/intro.css">
      <link rel="stylesheet" href="/CSSFolder/interactButton.css">
      <link rel="stylesheet" href="/CSSFolder/switch.css">
-    <style>
-      body {
-        background-color: lightblue;
-      }
-      #horizontal-container {
-        display: flex;
-      }
-    </style>
+     <link rel="stylesheet" href="/CSSFolder/body.css">
     <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
   </head>
   <body background-color="lightblue">
     <div id="heading">
-      <div id="links"><div id="text">
+      <div id="links">
+        <div id="text">
         Service Powered By Creativity And Science &ensp;&ensp;&ensp;|&ensp;&ensp;<a href="#intro"
           >Home</a
         >&ensp;&ensp;|&ensp;&ensp;<a href="#projectLink">Projects</a
         >&ensp;&ensp;|&ensp;&ensp;<a href="#contacts">Contacts</a>&ensp;&ensp;| &ensp;&ensp;Dark Mode&ensp;
           <label class="switch">
-          <input type="checkbox">
+          <input type="checkbox" id="darkMode">
             <span class="slider round"></span>
           </label>&ensp;&ensp;
         </div>
@@ -80,5 +74,6 @@
     <div id="contacts"></div>
     <script src="./Scripts/interactButtons.js"></script>
     <script src = "./Scripts/projectElementFactory.js"></script>
+    <script src = "./Scripts/darkMode.js"></script>
   </body>
 </html>

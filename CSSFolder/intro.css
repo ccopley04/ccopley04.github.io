@@ -2,6 +2,9 @@
   background-color: blue;
   height: 0.3vh;
 }
+.dark-mode #intro-separator {
+  background-color: lightblue;
+}
 #intro {
   padding-top: 100px;
   display: flex;
@@ -28,4 +31,8 @@
   margin-left: 35vw;
   opacity: 0;
   border: 0.4vw solid blue;
+}
+
+.dark-mode #intro #description #linkPic {
+  border: 0.4vw solid lightblue;
 }

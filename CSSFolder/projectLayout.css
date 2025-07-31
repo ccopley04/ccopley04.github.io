@@ -1,6 +1,5 @@
-#projects #centerLine {
+#centerLine {
   border-left: 5px solid black;
-  height: 1500px;
 }
 
 #projects .project {
@@ -11,7 +10,7 @@
   margin-right: 7.5vw;
   display: grid;
   grid-template-columns: 20vw 1vw 14vw;
-  grid-template-rows: 2vh 1vh 2fr;
+  grid-template-rows: 2vh 1.5vh 2fr;
   border: 0.2vw solid black;
   font-size: 1.1vmax;
 }
@@ -27,4 +26,31 @@
 
 #divider {
   height: 5px;
+}
+
+.dark-mode #projects .project {
+  background-color: black;
+  border: 0.2vw solid blue;
+  color: lightblue;
+}
+
+.dark-mode #projectHeader {
+  background-color: black;
+  border: 0.5vw solid lightblue;
+  color: white;
+}
+
+.dark-mode .title {
+  color: lightblue;
+  background-color: black;
+}
+
+.dark-mode #centerLine {
+  border-left: 5px solid lightblue;
+}
+#projects .project .underline {
+  background-color: black;
+}
+.dark-mode #projects .project .underline {
+  background-color: lightblue;
 }

@@ -1,0 +1,10 @@
+body {
+  background-color: lightblue;
+}
+#horizontal-container {
+  display: flex;
+}
+.dark-mode {
+  background-color: darkblue;
+  color: lightblue;
+}
