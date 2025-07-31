@@ -21,16 +21,23 @@
         border:0.5vh solid lightblue;
         color:white;
       }
+      #bottom{
+        background-color: black; 
+        height:0.5vh;
+      }
+      .dark-mode #bottom{
+        background-color: lightblue;
+      }
     </style>
     <link rel="stylesheet" href="/CSSFolder/projectLayout.css">
-     <link rel="stylesheet" href="/CSSFolder/header.css">
-     <link rel="stylesheet" href="/CSSFolder/intro.css">
-     <link rel="stylesheet" href="/CSSFolder/interactButton.css">
-     <link rel="stylesheet" href="/CSSFolder/switch.css">
-     <link rel="stylesheet" href="/CSSFolder/body.css">
+    <link rel="stylesheet" href="/CSSFolder/header.css">
+    <link rel="stylesheet" href="/CSSFolder/intro.css">
+    <link rel="stylesheet" href="/CSSFolder/interactButton.css">
+    <link rel="stylesheet" href="/CSSFolder/switch.css">
+    <link rel="stylesheet" href="/CSSFolder/body.css">
     <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
   </head>
-  <body background-color="lightblue">
+  <body>
     <div id="heading">
       <div id="links">
         <div id="text">
@@ -87,11 +94,10 @@
     <div id="projects" style="display:flex">
       <div id="leftProjects"></div>
       <div id="centerLine">
-        <div id="rightProjects">
-        </div>
+        <div id="rightProjects"></div>
       </div>
     </div>
-    <div style="background-color: black; height:0.5vh;"></div>
+    <div id="bottom"></div>
     <script src="./Scripts/interactButtons.js"></script>
     <script src = "./Scripts/projectElementFactory.js"></script>
     <script src = "./Scripts/darkMode.js"></script>
