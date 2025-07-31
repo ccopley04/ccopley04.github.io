@@ -1,16 +1,21 @@
 a #redirectLink {
-  color: black;
+  color: lightblue;
 }
 .redirectButton {
-  background-color: white;
+  background-color: black;
   width: 15vw;
   height: 10vh;
   font-size: 2vmax;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: lightblue;
 }
 #leftmost {
   margin-left: 27vw;
   margin-top: 8vh;
+}
+.dark-mode.redirectButton {
+  background-color: lightblue;
+  color: black;
 }

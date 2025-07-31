@@ -9,13 +9,17 @@ const picLinks = [
 
 buttons.forEach((myButton, index) => {
   myButton.addEventListener("mouseenter", () => {
-    myButton.style = "background-color: blue";
+    myButton.style =
+      "background-color: " +
+      (myButton.classList.contains("dark-mode") ? "white" : "blue");
     pic.src = picLinks[index];
     pic.style = "opacity:1";
   });
 
   myButton.addEventListener("mouseleave", () => {
-    myButton.style = "background-color: white";
+    myButton.style =
+      "background-color: " +
+      (myButton.classList.contains("dark-mode") ? "lightblue" : "black");
     pic.style = "opacity:0";
   });
 });

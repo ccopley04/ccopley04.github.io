@@ -36,6 +36,7 @@ function createProjectElement(
   projectDiv.style = "margin-top: " + (pos === 2 ? 300 : 150) + "px;";
 
   const title = document.createElement("div");
+  title.className = "title";
   title.textContent = titleText == "" ? "Project " + pos : titleText;
   title.style = "height:fit-content; width:fit-content; color:blue";
   projectDiv.append(title);
@@ -47,8 +48,8 @@ function createProjectElement(
   projectDiv.append(date);
 
   const underline = document.createElement("hr");
-  underline.style =
-    "background-color: black;" + "height: 0.2vh; width:35.11vw; grid-row:2";
+  underline.className = "underline";
+  underline.style = "height: 0.2vh; width:35.11vw; grid-row:2;";
   projectDiv.append(underline);
 
   if (!phone) {
@@ -113,8 +114,7 @@ function createProjectElement(
   }
 
   const centerLine = document.getElementById("centerLine");
-  centerLine.style =
-    "border-left: 5px solid black; height: " + pos * 275 + "px;";
+  centerLine.style = "height: " + pos * 275 + "px;";
 }
 
 createProjectElement(
@@ -137,7 +137,7 @@ createProjectElement(
   "This project is a series of works with the multi-disciplinary team Electronic ARTrium. " +
     "This team works to create interactive, educational experiences that mix physical and digital artistic mediums. " +
     "With this team, I worked on the Spring 2025 exhibit Bee My Guide as a member of the Visual Art and Design subteam. " +
-    "I worked with Unity and C# to design multiple character animations that were used in the creation of the NPC characters." +
+    "I was tasked using Unity and C# to design NPC character animations." +
     " Additionally, I am currently working as the team lead of the Creative Ideation subteam, working " +
     "to create and plan for the next exhibit to be announced soon.",
   "https://github.gatech.edu/VIP-Electronic-Artrium",
