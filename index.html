@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="..." />
     <title>Caleb Copley's Code Portfolio</title>
+    <style>
+      #connectPrompt{
+        font-size: 4vmax;
+        background-color: white;
+        width:24vw;
+        margin-left: 38vw;
+        margin-top: 3vh;
+        border:0.5vh solid black;
+        text-align: center;
+      }
+      .dark-mode #connectPrompt{
+        background-color: black;
+        border:0.5vh solid lightblue;
+        color:white;
+      }
+    </style>
     <link rel="stylesheet" href="/CSSFolder/projectLayout.css">
      <link rel="stylesheet" href="/CSSFolder/header.css">
      <link rel="stylesheet" href="/CSSFolder/intro.css">
@@ -20,8 +36,8 @@
         <div id="text">
         Service Powered By Creativity And Science &ensp;&ensp;&ensp;|&ensp;&ensp;<a href="#intro"
           >Home</a
-        >&ensp;&ensp;|&ensp;&ensp;<a href="#projectLink">Projects</a
-        >&ensp;&ensp;|&ensp;&ensp;<a href="#contacts">Contacts</a>&ensp;&ensp;| &ensp;&ensp;Dark Mode&ensp;
+        >&ensp;&ensp;|&ensp;&ensp;<a href="#contacts">Contact</a
+        >&ensp;&ensp;|&ensp;&ensp;<a href="#projectLink">Projects</a>&ensp;&ensp;| &ensp;&ensp;Dark Mode&ensp;
           <label class="switch">
           <input type="checkbox" id="darkMode">
             <span class="slider round"></span>
@@ -53,6 +69,8 @@
            further details my work by diving into specific details for my projects and showcases my codebases. I will be consistently updating 
            the projects such that this webpage will continue to be a timely look into my progress as a developer.  
           <hr id="intro-separator"/>
+          <div id="contacts"></div>
+          <div style="padding-top: 10vh;"></div>
           <img id="linkPic"/>
         </span>
 
@@ -62,6 +80,7 @@
     <a id="redirectLink" target="_blank" href="/Resume-Caleb_Copley.pdf"><button class="redirectButton" id="leftmost">Resume</button></a>
    <a id="redirectLink" target="_blank" href="https://www.linkedin.com/in/caleb-copley-98818b340/"><button class="redirectButton">LinkedIn</button></a>
    <a id="redirectLink" target="_blank" href="https://github.com/ccopley04"><button class="redirectButton">GitHub</button></a>
+   <div id="connectPrompt">Let's Connect!</div>
    <div id="projectLink">
     <div id="divider"></div>
     <div id="projectHeader">PROJECTS</div>
@@ -71,7 +90,8 @@
         <div id="rightProjects">
         </div>
       </div>
-    <div id="contacts"></div>
+    </div>
+    <div style="background-color: black; height:0.5vh;"></div>
     <script src="./Scripts/interactButtons.js"></script>
     <script src = "./Scripts/projectElementFactory.js"></script>
     <script src = "./Scripts/darkMode.js"></script>

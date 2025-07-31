@@ -10,7 +10,7 @@
   margin-right: 7.5vw;
   display: grid;
   grid-template-columns: 20vw 1vw 14vw;
-  grid-template-rows: 2vh 1.5vh 2fr;
+  grid-template-rows: 2vh 1.2vh 2fr;
   border: 0.2vw solid black;
   font-size: 1.1vmax;
 }
