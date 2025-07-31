@@ -9,6 +9,7 @@ let projectHeader = document.getElementById("projectHeader");
 let centerLine = document.getElementById("centerLine");
 let titles = document.getElementsByClassName("title");
 let underlines = document.getElementsByClassName("underline");
+let connectPrompt = document.getElementById("connectPrompt");
 
 toggle.addEventListener("change", () => {
   centerLine.classList.toggle("dark-mode");
@@ -29,4 +30,5 @@ toggle.addEventListener("change", () => {
   Array.from(underlines).forEach((underline) => {
     underline.classList.toggle("dark-mode");
   });
+  connectPrompt.classList.toggle("dark-mode");
 });
