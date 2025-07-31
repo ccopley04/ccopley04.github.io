@@ -1,8 +1,12 @@
+//Retrieve the HTML div that contain the projects
 const leftSide = document.getElementById("leftProjects");
 const rightSide = document.getElementById("rightProjects");
 
+//Check if the web page if opened with a phone
 let phone = window.innerWidth < window.innerHeight;
 
+//This function takes in title, HTML element, and a download link
+//It ensures that when the link is clicked, the browser asks the user before downloading
 function confirmDownload(linkElement, gameName, link) {
   linkElement.addEventListener("click", (event) => {
     event.preventDefault();
@@ -20,6 +24,7 @@ function confirmDownload(linkElement, gameName, link) {
   });
 }
 
+//Constructor for a new project
 function createProjectElement(
   pos,
   dateText,
@@ -30,28 +35,33 @@ function createProjectElement(
   showcaseLink = "",
   download = ""
 ) {
+  //Creates the all encompassing element
   const projectDiv = document.createElement("div");
 
   projectDiv.className = "project";
   projectDiv.style = "margin-top: " + (pos === 2 ? 300 : 150) + "px;";
 
+  //Create a title with the parameter titleText, add it to the project element
   const title = document.createElement("div");
   title.className = "title";
   title.textContent = titleText == "" ? "Project " + pos : titleText;
   title.style = "height:fit-content; width:fit-content; color:blue";
   projectDiv.append(title);
 
+  //Create a date with the parameter dateText, add it to the project element
   const date = document.createElement("div");
   date.textContent = dateText;
   date.style =
     "margin-right:2px; height:1.8vh; width:20vw; grid-column: 3; grid-row:1; text-align:right; justify-self: flex-end;";
   projectDiv.append(date);
 
+  //Create a border between the first and third row
   const underline = document.createElement("hr");
   underline.className = "underline";
   underline.style = "height: 0.2vh; width:35.11vw; grid-row:2;";
   projectDiv.append(underline);
 
+  //If the webpage is not opened by a phone, add an image with the relative path, imageSource
   if (!phone) {
     const image = document.createElement("img");
     image.src = imageSource;
@@ -60,6 +70,7 @@ function createProjectElement(
     projectDiv.append(image);
   }
 
+  //Create a description with the parameter text
   const description = document.createElement("div");
   description.style =
     "grid-column:1; font-size:15px; width: " +
@@ -73,6 +84,8 @@ function createProjectElement(
         "Lorem, ipsum dolor sit."
       : text;
 
+  //If the project needs a final product link, create one with the showcaseLink parameter
+  //Add it to the description element
   if (!(showcaseLink == "")) {
     const projectLink = document.createElement("a");
     projectLink.href = showcaseLink;
@@ -84,6 +97,8 @@ function createProjectElement(
     description.appendChild(projectLink);
   }
 
+  //If the project needs a link to the code, create one with the codebaseLink parameter
+  //Add it to the description element
   if (!(codebaseLink == "")) {
     const codeLink = document.createElement("a");
     codeLink.href = codebaseLink;
@@ -95,6 +110,8 @@ function createProjectElement(
     description.appendChild(codeLink);
   }
 
+  //If the project needs a download link, create one with the downloadLink parameter
+  //Add it to the description element
   if (!(download == "")) {
     const downloadLink = document.createElement("a");
     downloadLink.textContent = "Click Here To Download Current Build!";
@@ -105,18 +122,23 @@ function createProjectElement(
     description.appendChild(downloadLink);
   }
 
+  //Add the description to the project element
   projectDiv.append(description);
 
+  //If the position of the project is even, place it on the right side
+  //Place it on the left otherwise
   if (pos % 2 == 0) {
     rightSide.append(projectDiv);
   } else {
     leftSide.append(projectDiv);
   }
 
+  //Increase the center line size to fit all projects
   const centerLine = document.getElementById("centerLine");
   centerLine.style = "height: " + pos * 275 + "px;";
 }
 
+//Use the constructor function to create 7 projects
 createProjectElement(
   1,
   "JULY 2025 - PRESENT",
