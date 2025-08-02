@@ -238,7 +238,12 @@ createProjectElement(
   "APRIL 2025 - MAY 2025",
   "Notes Application",
   "./Images/notesApplicationPic.png",
-  "",
+  "This project is a simple UI that acts as a note taking application to record and rank different start up ideas." +
+    " I programmed this project with Java and made use of the JavaFX library to create a slick UI with all important " +
+    "functionality needed for note taking. The application can save ideas and write them to a text database, rank the ideas " +
+    "by a formula that looks at all of the idea's features, as well as a real time visual showcase of all your current ideas. This " +
+    "project allowed me to develop my UI skills as well as gain a proficiency with JavaFX and work with crucial Java concepts such as file " +
+    "writing and event handling. ",
   "",
   "",
   "./Projects/NotesApplication.zip"
