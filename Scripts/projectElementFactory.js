@@ -233,3 +233,13 @@ createProjectElement(
   "",
   "https://humn2010group2.weebly.com/"
 );
+createProjectElement(
+  8,
+  "APRIL 2025 - MAY 2025",
+  "Notes Application",
+  "./Images/notesApplicationPic.png",
+  "",
+  "",
+  "",
+  "./Projects/NotesApplication.zip"
+);
