@@ -3,13 +3,13 @@
 }
 
 #projects .project {
-  width: 35.2vw;
+  width: 36vw;
   height: 35vh;
   background-color: white;
   margin-left: 7.5vw;
   margin-right: 7.5vw;
   display: grid;
-  grid-template-columns: 20vw 1vw 14vw;
+  grid-template-columns: 20vw 1.1vw 14.9vw;
   grid-template-rows: 2vh 1.2vh 2fr;
   border: 0.2vw solid black;
   font-size: 1.1vmax;

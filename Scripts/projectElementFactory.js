@@ -58,7 +58,7 @@ function createProjectElement(
   //Create a border between the first and third row
   const underline = document.createElement("hr");
   underline.className = "underline";
-  underline.style = "height: 0.2vh; width:35.11vw; grid-row:2;";
+  underline.style = "height: 0.2vh; width:35.91vw; grid-row:2;";
   projectDiv.append(underline);
 
   //If the webpage is not opened by a phone, add an image with the relative path, imageSource
@@ -66,7 +66,7 @@ function createProjectElement(
     const image = document.createElement("img");
     image.src = imageSource;
     image.style =
-      "height: 25vh; width:15vw; grid-row:3; grid-column:2; margin-top:10px; border:3px solid blue";
+      "height: 25vh; width:15vw; grid-row:3; grid-column:2; margin-top:10px; border:3px solid blue; margin-left:0.5vw";
     projectDiv.append(image);
   }
 
@@ -75,7 +75,7 @@ function createProjectElement(
   description.style =
     "grid-column:1; font-size:15px; width: " +
     (phone ? "33vw" : "20vw") +
-    "; height:32vh;overflow:auto";
+    "; height:32vh;overflow:auto; margin-top:0.5vh";
   description.textContent =
     text === ""
       ? "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur" +
@@ -153,61 +153,6 @@ createProjectElement(
 );
 createProjectElement(
   2,
-  "JANUARY 2025 - PRESENT",
-  "Electronic ARTrium",
-  "./Images/beeMyGuidePic.png",
-  "This project is a series of works with the multi-disciplinary team Electronic ARTrium. " +
-    "This team works to create interactive, educational experiences that mix physical and digital artistic mediums. " +
-    "With this team, I worked on the Spring 2025 exhibit Bee My Guide as a member of the Visual Art and Design subteam. " +
-    "I was tasked using Unity and C# to design NPC character animations." +
-    " Additionally, I am currently working as the team lead of the Creative Ideation subteam, working " +
-    "to create and plan for the next exhibit to be announced soon.",
-  "https://github.gatech.edu/VIP-Electronic-Artrium",
-  "https://electronicartrium.ece.gatech.edu/bee-my-guide/"
-);
-createProjectElement(
-  3,
-  "JANUARY 2025 - MAY 2025",
-  "Mourning Brew",
-  "Images/mourningBrew.png",
-  "Mourning Brew is a small indie game developed by a team of Georgia Tech students as part of the Video Game Development Club. " +
-    "The game follows the journey of afterlife cafe owner and compiles a ton of fun mini games to be enjoyed. " +
-    "As a member of " +
-    "the team, I was a software developer who used C# and Unity and was tasked with designing the movement and walking animations of the " +
-    "characters. Additionally, I worked on the mini games, most notably I solo designed a rhythm based, baking simulation for the late game content.",
-  "https://github.com/cpeng87/Untitled-Ghost-Game",
-  "https://cpeng8.itch.io/mourning-brew",
-  "./Projects/Build 7.22.zip"
-);
-createProjectElement(
-  4,
-  "JUNE 2025 - AUGUST 2025",
-  "Political Ideology Calculator",
-  "Images/politicalIdeologyShowcase.png",
-  "This project is a webpage that is designed to take user input on a number of political axes." +
-    " The user provides the numeric values, which generate specific " +
-    "ideologies, and the Gemini AI API is called to generate an all encompassing political ideology. " +
-    "This project was made with JavaScript, HTML, and CSS and implements coding concepts such as binary trees, API usage, " +
-    "and interpreting multi-dimensional data. The remaining updates I will continue to add are" +
-    " increasingly specific political ideology to grant the user more specificity.",
-  "https://github.com/ccopley04/PoliticalIdeologyCalculator",
-  "https://ccopley04.github.io/PoliticalIdeologyCalculator/"
-);
-createProjectElement(
-  5,
-  "OCTOBER 2024 - PRESENT",
-  "Three Two One...Draw!",
-  "./Images/threeTwoOneDrawPic.png",
-  "Three Two One…Draw is my own indie game that I am currently developing as the Design and Software Lead. " +
-    "It is a deck building RPG that simulates a real time Western style duel with card mechanics and thematic music and art. " +
-    "I have developed a working demo with C# and Unity that showcases the main design of the game, such as deck composition, multiple " +
-    "coroutines for time tracking, and an object oriented software architecture. I have also written a thorough game design document that " +
-    "pitches the game and is used to find other members for development, such as my new artist and story director.",
-  "https://github.com/ccopley04/ThreeTwoOneDraw",
-  "https://docs.google.com/document/d/1XyJsGtp7-YXZqh4WxrxR8-FoTENTwVMhkC44NEyeQkA/edit?usp=sharing"
-);
-createProjectElement(
-  6,
   "MAY 2025 - PRESENT",
   "Slay The Spire Mod",
   "./Images/stsModPic.png",
@@ -221,20 +166,63 @@ createProjectElement(
   "https://github.com/ccopley04/STS_Mod_Tank"
 );
 createProjectElement(
-  7,
-  "AUGUST 2024 - NOVEMBER 2024",
-  "Humanities Website",
-  "./Images/humanitiesWebsitePic.png",
-  "This project is a website designed and populated by a team of six for a humanities class that seeks to concisely " +
-    "describe love and analyze various works. I worked as the Team Lead and Chief Website Designer of the group and, using " +
-    "the software Weebly, designed our UI. Without any coding required, I was able to design and create a user-friendly, " +
-    "aesthetic web page that clearly showcases our group's progress and discussions. Additionally, as the Team Lead, I managed the " +
-    "members and ensured all the needed work was completed and I worked to define the creative vision for the entire project.",
-  "",
-  "https://humn2010group2.weebly.com/"
+  3,
+  "JANUARY 2025 - PRESENT",
+  "Electronic ARTrium",
+  "./Images/beeMyGuidePic.png",
+  "This project is a series of works with the multi-disciplinary team Electronic ARTrium. " +
+    "This team works to create interactive, educational experiences that mix physical and digital artistic mediums. " +
+    "With this team, I worked on the Spring 2025 exhibit Bee My Guide as a member of the Visual Art and Design subteam. " +
+    "I was tasked using Unity and C# to design NPC character animations." +
+    " Additionally, I am currently working as the team lead of the Creative Ideation subteam, working " +
+    "to create and plan for the next exhibit to be announced soon.",
+  "https://github.gatech.edu/VIP-Electronic-Artrium",
+  "https://electronicartrium.ece.gatech.edu/bee-my-guide/"
+);
+
+createProjectElement(
+  4,
+  "OCTOBER 2024 - PRESENT",
+  "Three Two One...Draw!",
+  "./Images/threeTwoOneDrawPic.png",
+  "Three Two One…Draw is my own indie game that I am currently developing as the Design and Software Lead. " +
+    "It is a deck building RPG that simulates a real time Western style duel with card mechanics and thematic music and art. " +
+    "I have developed a working demo with C# and Unity that showcases the main design of the game, such as deck composition, multiple " +
+    "coroutines for time tracking, and an object oriented software architecture. I have also written a thorough game design document that " +
+    "pitches the game and is used to find other members for development, such as my new artist and story director.",
+  "https://github.com/ccopley04/ThreeTwoOneDraw",
+  "https://docs.google.com/document/d/1XyJsGtp7-YXZqh4WxrxR8-FoTENTwVMhkC44NEyeQkA/edit?usp=sharing"
 );
 createProjectElement(
-  8,
+  5,
+  "JUNE 2025 - AUGUST 2025",
+  "Political Ideology Calculator",
+  "Images/politicalIdeologyShowcase.png",
+  "This project is a webpage that is designed to take user input on a number of political axes." +
+    " The user provides the numeric values, which generate specific " +
+    "ideologies, and the Gemini AI API is called to generate an all encompassing political ideology. " +
+    "This project was made with JavaScript, HTML, and CSS and implements coding concepts such as binary trees, API usage, " +
+    "and interpreting multi-dimensional data. The remaining updates I will continue to add are" +
+    " increasingly specific political ideology to grant the user more specificity.",
+  "https://github.com/ccopley04/PoliticalIdeologyCalculator",
+  "https://ccopley04.github.io/PoliticalIdeologyCalculator/"
+);
+createProjectElement(
+  6,
+  "JANUARY 2025 - MAY 2025",
+  "Mourning Brew",
+  "Images/mourningBrew.png",
+  "Mourning Brew is a small indie game developed by a team of Georgia Tech students as part of the Video Game Development Club. " +
+    "The game follows the journey of afterlife cafe owner and compiles a ton of fun mini games to be enjoyed. " +
+    "As a member of " +
+    "the team, I was a software developer who used C# and Unity and was tasked with designing the movement and walking animations of the " +
+    "characters. Additionally, I worked on the mini games, most notably I solo designed a rhythm based, baking simulation for the late game content.",
+  "https://github.com/cpeng87/Untitled-Ghost-Game",
+  "https://cpeng8.itch.io/mourning-brew",
+  "./Projects/Build 7.22.zip"
+);
+createProjectElement(
+  7,
   "APRIL 2025 - MAY 2025",
   "Notes Application",
   "./Images/notesApplicationPic.png",
@@ -247,4 +235,17 @@ createProjectElement(
   "",
   "",
   "./Projects/NotesApplication.zip"
+);
+createProjectElement(
+  8,
+  "AUGUST 2024 - NOVEMBER 2024",
+  "Humanities Website",
+  "./Images/humanitiesWebsitePic.png",
+  "This project is a website designed and populated by a team of six for a humanities class that seeks to concisely " +
+    "describe love and analyze various works. I worked as the Team Lead and Chief Website Designer of the group and, using " +
+    "the software Weebly, designed our UI. Without any coding required, I was able to design and create a user-friendly, " +
+    "aesthetic web page that clearly showcases our group's progress and discussions. Additionally, as the Team Lead, I managed the " +
+    "members and ensured all the needed work was completed and I worked to define the creative vision for the entire project.",
+  "",
+  "https://humn2010group2.weebly.com/"
 );

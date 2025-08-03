@@ -5,6 +5,6 @@ body {
   display: flex;
 }
 .dark-mode {
-  background-color: darkblue;
+  background-color: rgb(28, 28, 81);
   color: lightblue;
 }
