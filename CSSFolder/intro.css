@@ -25,14 +25,20 @@
   padding-right: 1vw;
 }
 
+#intro.phone {
+  width: 90vw;
+  display: inline-block;
+  margin-left: 5vw;
+}
+
 #intro #description.phone {
   font-size: 1.4vmax;
   text-align: left;
-  width: 65vw;
+  width: 90vw;
 }
 
 .horizontal-container.phone {
-  width: 65vw;
+  width: 90vw;
 }
 
 #intro #description #linkPic {
