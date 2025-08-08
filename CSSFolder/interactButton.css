@@ -19,3 +19,9 @@ a #redirectLink {
   background-color: lightblue;
   color: black;
 }
+.phone.redirectButton {
+  width: 20vw;
+}
+#leftmost.phone.redirectButton {
+  margin-left: 20vw;
+}

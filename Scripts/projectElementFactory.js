@@ -135,7 +135,7 @@ function createProjectElement(
 
   //Increase the center line size to fit all projects
   const centerLine = document.getElementById("centerLine");
-  centerLine.style = "height: " + pos * 275 + "px;";
+  centerLine.style = "height: " + pos * 35 + "vh;";
 }
 
 //Use the constructor function to create 7 projects
