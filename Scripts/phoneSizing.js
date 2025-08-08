@@ -15,7 +15,7 @@ if (phoneSize) {
 
   //Ensure title name is placed correctly
   const title = document.getElementById("nameTitle");
-  title.style = "padding-top:8vmax; text-align:right";
+  title.style = "padding-top:9vh; text-align:right";
 
   //If the window is phone, change the header spacing
   const header = document.getElementById("heading");
