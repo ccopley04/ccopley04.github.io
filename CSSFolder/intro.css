@@ -25,6 +25,16 @@
   padding-right: 1vw;
 }
 
+#intro #description.phone {
+  font-size: 1.4vmax;
+  text-align: left;
+  width: 65vw;
+}
+
+.horizontal-container.phone {
+  width: 65vw;
+}
+
 #intro #description #linkPic {
   width: 30vw;
   height: 17vw;

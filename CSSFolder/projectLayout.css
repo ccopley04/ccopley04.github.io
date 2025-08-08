@@ -34,6 +34,10 @@
   color: lightblue;
 }
 
+#projectHeader.phone {
+  height: 5vh;
+}
+
 .dark-mode #projectHeader {
   background-color: black;
   border: 0.5vw solid lightblue;
