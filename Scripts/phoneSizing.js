@@ -9,13 +9,15 @@ headShot.src = "./Images/seriousHeadshot.JPG";
 if (phoneSize) {
   //Add the headshot
   const top = document.getElementById("top");
-  top.appendChild(headShot);
+  top.style =
+    "display:grid; grid-template-columns:30vw 30vw 30vw; grid-template-row:1vh 9vh";
 
-  top.style = "display:flex; margin-left:10vw";
+  top.appendChild(headShot);
+  headShot.style = "grid-column:3; grid-row: span 2 / span 2;";
 
   //Ensure title name is placed correctly
   const title = document.getElementById("nameTitle");
-  title.style = "padding-top:9vh; text-align:right";
+  title.style = "grid-column:2; grid-row:2;text-align:right";
 
   //If the window is phone, change the header spacing
   const header = document.getElementById("heading");

@@ -75,7 +75,7 @@ function createProjectElement(
   description.style =
     "grid-column:1; font-size:15px; width: " +
     (phone ? "33vw" : "20vw") +
-    "; height:32.3vh;overflow:auto; margin-top:0.5vh";
+    "; height:32.5vh;overflow:auto; margin-top:0.5vh";
   description.textContent =
     text === ""
       ? "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur" +
