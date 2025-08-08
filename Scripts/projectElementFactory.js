@@ -58,7 +58,7 @@ function createProjectElement(
   //Create a border between the first and third row
   const underline = document.createElement("hr");
   underline.className = "underline";
-  underline.style = "height: 0.2vh; width:35.91vw; grid-row:2;";
+  underline.style = "height: 0.2vh; width:35.91vw; grid-row:2;margin-top:1vh";
   projectDiv.append(underline);
 
   //If the webpage is not opened by a phone, add an image with the relative path, imageSource
@@ -75,7 +75,7 @@ function createProjectElement(
   description.style =
     "grid-column:1; font-size:15px; width: " +
     (phone ? "33vw" : "20vw") +
-    "; height:32vh;overflow:auto; margin-top:0.5vh";
+    "; height:32.3vh;overflow:auto; margin-top:0.5vh";
   description.textContent =
     text === ""
       ? "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur" +
