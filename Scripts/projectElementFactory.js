@@ -61,14 +61,11 @@ function createProjectElement(
   underline.style = "height: 0.2vh; width:35.91vw; grid-row:2;margin-top:1vh";
   projectDiv.append(underline);
 
-  //If the webpage is not opened by a phone, add an image with the relative path, imageSource
-  if (!phone) {
-    const image = document.createElement("img");
-    image.src = imageSource;
-    image.style =
-      "height: 25vh; width:15vw; grid-row:3; grid-column:2; margin-top:10px; border:3px solid blue; margin-left:0.5vw";
-    projectDiv.append(image);
-  }
+  //Create an image element
+  const image = document.createElement("img");
+  image.className = "image";
+  image.src = imageSource;
+  projectDiv.append(image);
 
   //Create a description with the parameter text
   const description = document.createElement("div");
@@ -216,7 +213,7 @@ createProjectElement(
     "The game follows the journey of afterlife cafe owner and compiles a ton of fun mini games to be enjoyed. " +
     "As a member of " +
     "the team, I was a software developer who used C# and Unity and was tasked with designing the movement and walking animations of the " +
-    "characters. Additionally, I worked on the mini games, most notably I solo designed a rhythm based, baking simulation for the late game content.",
+    "characters. Additionally, I worked on the mini games, most notably I solo designed a rhythm based, baking simulation for the early game content.",
   "https://github.com/cpeng87/Untitled-Ghost-Game",
   "https://cpeng8.itch.io/mourning-brew",
   "./Projects/Build 7.22.zip"
