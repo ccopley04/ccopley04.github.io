@@ -4,7 +4,7 @@ const pic = document.getElementById("linkPic");
 
 //An array of all the relative file paths to images
 const picLinks = [
-  "/Images/resumePlaceholder.jpg",
+  "/Images/ResumePic.png",
   "/Images/linkedInPlaceholder.jpg",
   "/Images/githubPic.png",
 ];
