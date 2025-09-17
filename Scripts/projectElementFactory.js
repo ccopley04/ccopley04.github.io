@@ -180,13 +180,14 @@ createProjectElement(
 createProjectElement(
   4,
   "OCTOBER 2024 - PRESENT",
-  "Three Two One...Draw!",
+  "3 2 1...Draw!",
   "./Images/threeTwoOneDrawPic.png",
-  "Three Two One…Draw is my own indie game that I am currently developing as the Design and Software Lead. " +
-    "It is a deck building RPG that simulates a real time Western style duel with card mechanics and thematic music and art. " +
-    "I have developed a working demo with C# and Unity that showcases the main design of the game, such as deck composition, multiple " +
-    "coroutines for time tracking, and an object oriented software architecture. I have also written a thorough game design document that " +
-    "pitches the game and is used to find other members for development, such as my new artist and story director.",
+  "3 2 1...Draw! is my own indie game that I am currently developing as the Software Engineering Director and Team Lead." +
+    " I am leading a team of over 90 fellow students in an effort to complete the game by the end of the semester. " +
+    "It is my role to review code, art, and gameplay mechanics before I implement them into the current iteration of the game." +
+    " The game is a deck building RPG, made with C# and Unity, that simulates a real time Western style duel with card mechanics and thematic music and art. " +
+    "I have also written a thorough game design document that " +
+    "is used to onboard other members for development.",
   "https://github.com/ccopley04/ThreeTwoOneDraw",
   "https://docs.google.com/document/d/1XyJsGtp7-YXZqh4WxrxR8-FoTENTwVMhkC44NEyeQkA/edit?usp=sharing"
 );
