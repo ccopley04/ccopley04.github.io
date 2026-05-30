@@ -2,38 +2,19 @@
 
 <html lang="en">
   <head>
-    <meta charset="UTF-*" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="..." />
-    <title>Caleb Copley's Code Portfolio</title>
-    <style>
-      #connectPrompt{
-        font-size: 4vmax;
-        background-color: white;
-        width:26vw;
-        margin-left: 37vw;
-        margin-top: 3vh;
-        text-align: center;
-      }
-      .dark-mode #connectPrompt{
-        background-color: black;
-        color:white;
-      }
-      #bottom{
-        background-color: black; 
-        height:0.5vh;
-        width:100vw;
-      }
-      .dark-mode #bottom{
-        background-color: lightblue;
-      }
-    </style>
-    <link rel="stylesheet" href="/CSSFolder/projectLayout.css">
+    <meta name="description" content="Caleb Copley's coding portfolio — game developer and software engineer at Georgia Tech." />
+    <title>Caleb Copley | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSSFolder/body.css">
     <link rel="stylesheet" href="/CSSFolder/header.css">
     <link rel="stylesheet" href="/CSSFolder/intro.css">
     <link rel="stylesheet" href="/CSSFolder/interactButton.css">
     <link rel="stylesheet" href="/CSSFolder/switch.css">
-    <link rel="stylesheet" href="/CSSFolder/body.css">
+    <link rel="stylesheet" href="/CSSFolder/projectLayout.css">
     <link rel="stylesheet" href="/CSSFolder/images.css">
     <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
   </head>
@@ -41,67 +22,76 @@
     <div id="heading">
       <div id="links">
         <div id="text">
-        Service Powered By Creativity And Science &ensp;&ensp;|&ensp;&ensp;<a href="#intro"
-          >Home</a
-        >&ensp;&ensp;|&ensp;&ensp;<a href="#contacts">Contact</a
-        >&ensp;&ensp;|&ensp;&ensp;<a href="#projectLink">Projects</a>&ensp;&ensp;| &ensp;&ensp;Dark Mode&ensp;
+          Service Powered By Creativity And Science &ensp;|&ensp;<a href="#intro">Home</a>&ensp;|&ensp;<a href="#contacts">Contact</a>&ensp;|&ensp;<a href="#projectLink">Projects</a>&ensp;|&ensp;Dark Mode&ensp;
           <label class="switch">
-          <input type="checkbox" id="darkMode">
+            <input type="checkbox" id="darkMode">
             <span class="slider round"></span>
-          </label>&ensp;&ensp;
+          </label>&ensp;
         </div>
-    
       </div>
-      <image src="./Images/headshot.jpg"></image>
+      <img src="./Images/headshot.jpg" alt="Caleb Copley headshot">
     </div>
+
     <div id="intro">
       <div class="horizontal-container">
         <div id="top">
-          <div id="nameTitle" style="text-align: right;">Caleb Copley</div>
+          <div id="nameTitle">Caleb Copley</div>
         </div>
         <span id="description">
-          <hr id="intro-separator" style="text-align: right;"/>
-          Hello! My name is Caleb Copley and I am a game developer and software engineer! 
-          I grew up in Evans, GA and have since moved to Atlanta, GA to attend the Georgia Institute of Technology. 
-          I am pursuing a bachelors’ degree in Computer Science, with a concentration on Modeling/Simulation and Digital Media, 
-          along with a minor in Mathematics. My technical skills include multiple object orientated languages and a deep understanding of 
-          software architecture. I have coding proficiency in Python, Java, and C#. With my knowledge of C#, I have also learned and mastered 
-          Unity. I am able to use Unity to develop video games and create digital media experiences. I do this both individually, but 
-          also with Georgia Tech’s 
-          Video Game Development club and the Electronic ARTrium vertically integrated team. Alongside my abilities in game development, I 
-          also have experience with web design and UI/UX design. This includes creating websites without coding, by utilizing user software, 
+          <hr id="intro-separator" />
+          Hello! My name is Caleb Copley and I am a game developer and software engineer!
+          I grew up in Evans, GA and have since moved to Atlanta, GA to attend the Georgia Institute of Technology.
+          I am pursuing a bachelors' degree in Computer Science, with a concentration on Modeling/Simulation and Digital Media,
+          along with a minor in Mathematics. My technical skills include multiple object orientated languages and a deep understanding of
+          software architecture. I have coding proficiency in Python, Java, and C#. With my knowledge of C#, I have also learned and mastered
+          Unity. I am able to use Unity to develop video games and create digital media experiences. I do this both individually, but
+          also with Georgia Tech's
+          Video Game Development club and the Electronic ARTrium vertically integrated team. Alongside my abilities in game development, I
+          also have experience with web design and UI/UX design. This includes creating websites without coding, by utilizing user software,
           but also
-           web development with JavaScript, HTML, and CSS. These technical skills complement my numerous soft skills as well. I’ve worked as a 
-           math instructor for almost two years and have also worked as a teaching assistant for an intro programming course. These job 
-           experiences helped me master skills such as communications, leadership, and personability. My soft skills help me improve in my software 
-           development journey as I continue working on projects and use my communication skills to lead and guide my peers. This webpage 
-           further details my work by diving into specific details for my projects and showcases my codebases. I will be consistently updating 
-           the projects such that this webpage will continue to be a timely look into my progress as a developer.  
-          <hr id="intro-separator"/>
+           web development with JavaScript, HTML, and CSS. These technical skills complement my numerous soft skills as well. I've worked as a
+           math instructor for almost two years and have also worked as a teaching assistant for an intro programming course. These job
+           experiences helped me master skills such as communications, leadership, and personability. My soft skills help me improve in my software
+           development journey as I continue working on projects and use my communication skills to lead and guide my peers. This webpage
+           further details my work by diving into specific details for my projects and showcases my codebases. I will be consistently updating
+           the projects such that this webpage will continue to be a timely look into my progress as a developer.
+          <hr class="intro-separator-bottom" />
           <div id="contacts"></div>
-          <div style="padding-top: 3vh;"></div>
-          <img id="linkPic"/>
         </span>
+      </div>
+    </div>
 
+    <div id="connect-section">
+      <div id="connectPrompt">Let's Connect!</div>
+      <img id="linkPic"/>
+      <div id="button-group">
+        <a class="button-link" target="_blank" href="/Digital_Resume_2.pdf">
+          <button class="redirectButton" id="leftmost">Resume</button>
+        </a>
+        <a class="button-link" target="_blank" href="https://www.linkedin.com/in/caleb-copley-98818b340/">
+          <button class="redirectButton">LinkedIn</button>
+        </a>
+        <a class="button-link" target="_blank" href="https://github.com/ccopley04">
+          <button class="redirectButton">GitHub</button>
+        </a>
       </div>
     </div>
-    <a id="redirectLink" target="_blank" href="/Digital_Resume_2.pdf"><button class="redirectButton" id="leftmost">Resume</button></a>
-   <a id="redirectLink" target="_blank" href="https://www.linkedin.com/in/caleb-copley-98818b340/"><button class="redirectButton">LinkedIn</button></a>
-   <a id="redirectLink" target="_blank" href="https://github.com/ccopley04"><button class="redirectButton">GitHub</button></a>
-   <div id="connectPrompt">Let's Connect!</div>
-   <div id="projectLink">
-    <div id="divider"></div>
-    <div id="projectHeader">PROJECTS</div>
-    <div id="projects" style="display:flex">
-      <div id="leftProjects"></div>
-      <div id="centerLine">
-        <div id="rightProjects"></div>
+
+    <div id="projectLink">
+      <div id="divider"></div>
+      <div id="projectHeader">PROJECTS</div>
+      <div id="projects" style="display:flex">
+        <div id="leftProjects"></div>
+        <div id="centerLine">
+          <div id="rightProjects"></div>
+        </div>
       </div>
+      <div id="bottom"></div>
     </div>
-    <div id="bottom"></div>
+
     <script src="./Scripts/interactButtons.js"></script>
-    <script src = "./Scripts/projectElementFactory.js"></script>
-    <script src = "./Scripts/darkMode.js"></script>
+    <script src="./Scripts/projectElementFactory.js"></script>
+    <script src="./Scripts/darkMode.js"></script>
     <script src="./Scripts/phoneSizing.js"></script>
   </body>
 </html>

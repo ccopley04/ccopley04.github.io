@@ -21,19 +21,20 @@ toggle.addEventListener("change", () => {
   body.classList.toggle("dark-mode");
   underline.classList.toggle("dark-mode");
   Array.from(redirectButtons).forEach((button) => {
-    button.style = "";
+    //Reset inline styles so CSS classes take effect cleanly
+    button.style.backgroundColor = "";
+    button.style.color = "";
     button.classList.toggle("dark-mode");
   });
   Array.from(projects).forEach((project) => {
     project.classList.toggle("dark-mode");
   });
   Array.from(titles).forEach((title) => {
-    title.style = "";
     title.classList.toggle("dark-mode");
   });
   linkPic.classList.toggle("dark-mode");
-  Array.from(underlines).forEach((underline) => {
-    underline.classList.toggle("dark-mode");
+  Array.from(underlines).forEach((ul) => {
+    ul.classList.toggle("dark-mode");
   });
   connectPrompt.classList.toggle("dark-mode");
   bottom.classList.toggle("dark-mode");

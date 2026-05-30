@@ -45,14 +45,14 @@ function createProjectElement(
   const title = document.createElement("div");
   title.className = "title";
   title.textContent = titleText == "" ? "Project " + pos : titleText;
-  title.style = "height:fit-content; width:fit-content; color:blue";
+  title.style = "height:fit-content; width:fit-content; color:#3b82f6; font-weight:700;";
   projectDiv.append(title);
 
   //Create a date with the parameter dateText, add it to the project element
   const date = document.createElement("div");
   date.textContent = dateText;
   date.style =
-    "margin-right:2px; height:1.8vh; width:20vw; grid-column: 3; grid-row:1; text-align:right; justify-self: flex-end;";
+    "margin-right:2px; height:1.8vh; width:20vw; grid-column: 3; grid-row:1; text-align:right; justify-self: flex-end; font-size:0.8em; color:#64748b; font-weight:500;";
   projectDiv.append(date);
 
   //Create a border between the first and third row
@@ -70,9 +70,9 @@ function createProjectElement(
   //Create a description with the parameter text
   const description = document.createElement("div");
   description.style =
-    "grid-column:1; font-size:15px; width: " +
+    "grid-column:1; font-size:14px; line-height:1.6; width: " +
     (phone ? "33vw" : "20vw") +
-    "; height:32.5vh;overflow:auto; margin-top:0.5vh";
+    "; height:32.5vh; overflow:auto; margin-top:0.5vh; padding-right:0.5rem;";
   description.textContent =
     text === ""
       ? "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur" +
@@ -86,7 +86,7 @@ function createProjectElement(
   if (!(showcaseLink == "")) {
     const projectLink = document.createElement("a");
     projectLink.href = showcaseLink;
-    projectLink.style = "color:blue";
+    projectLink.style = "color:#3b82f6; font-weight:600;";
     projectLink.textContent = "Click Here To See The Project!";
     projectLink.target = "_blank";
 
@@ -99,7 +99,7 @@ function createProjectElement(
   if (!(codebaseLink == "")) {
     const codeLink = document.createElement("a");
     codeLink.href = codebaseLink;
-    codeLink.style = "color:blue";
+    codeLink.style = "color:#3b82f6; font-weight:600;";
     codeLink.textContent = "Click Here To See The Code Base!";
     codeLink.target = "_blank";
 
@@ -112,7 +112,7 @@ function createProjectElement(
   if (!(download == "")) {
     const downloadLink = document.createElement("a");
     downloadLink.textContent = "Click Here To Download Current Build!";
-    downloadLink.style = "color:blue";
+    downloadLink.style = "color:#3b82f6; font-weight:600;";
     confirmDownload(downloadLink, titleText, download);
 
     description.appendChild(document.createElement("br"));
@@ -154,7 +154,7 @@ createProjectElement(
   "Slay The Spire Mod",
   "./Images/stsModPic.png",
   "This project is a character mod for the deck building game Slay the Spire. " +
-    "This mod includes my own custom character for the game, along with the character’s " +
+    "This mod includes my own custom character for the game, along with the character's " +
     "custom made deck, and was designed with the guidance of the Basic Mod tutorial. " +
     "This project was done in Java and showcases my proficiency in object oriented programming " +
     "as well as my ability to interpret and utilize a large library of code that I did not write. " +
