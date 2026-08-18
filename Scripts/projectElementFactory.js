@@ -153,9 +153,9 @@ createProjectElement(
 );
 createProjectElement(
   2,
-  "OCTOBER 2024 - JANUARY 2026",
+  "AUGUST 2025 - JANUARY 2026",
   "3 2 1...Draw!",
-  "./Images/threeTwoOneDrawPic.png",
+  "./Images/321DrawPic2.png",
   "3 2 1...Draw! is my own indie game that I am currently developing as the Software Engineering Director and Team Lead." +
     " I am leading a team of over 90 fellow students in an effort to complete the game by the end of the semester. " +
     "It is my role to review code, art, and gameplay mechanics before I implement them into the current iteration of the game." +
@@ -163,10 +163,24 @@ createProjectElement(
     "I have also written a thorough game design document that " +
     "is used to onboard other members for development.",
   "https://github.com/ccopley04/ThreeTwoOneDraw",
-  "https://docs.google.com/document/d/1XyJsGtp7-YXZqh4WxrxR8-FoTENTwVMhkC44NEyeQkA/edit?usp=sharing",
+  "https://moonwitchexe.itch.io/three-two-onedraw",
 );
 createProjectElement(
   3,
+  "AUGUST 2025 - DECEMBER 2025",
+  "SpendWise",
+  "./Images/spendwisePic.png",
+  "This app was completed for the course CS 2340. The app acts as a general finance tracker for users and includes features such as " +
+    "budgeting goals, networking with other users, AI chatbot, and spending log. My role in this project was software architect. " +
+    "I created multiple design class diagrams and implemented a variety of design patters. My primary job was to perform code reviews " +
+    "and ensure code integrated into the product was high quality and fulfilled requirements. " +
+    "By upholding best code practices and debugging features, I was able to gain experience managaing an " +
+    "everchanging codebase.",
+  "",
+  "https://www.youtube.com/watch?v=execEmjGj7g",
+);
+createProjectElement(
+  4,
   "JULY 2025 - SEPTEMBER 2025",
   "Coding Portfolio",
   "/Images/codingPortfolioShowcase.png",
@@ -178,7 +192,7 @@ createProjectElement(
   "https://ccopley04.github.io/",
 );
 createProjectElement(
-  4,
+  5,
   "MAY 2025 - AUGUST 2025",
   "Slay The Spire Mod",
   "./Images/stsModPic.png",
@@ -187,13 +201,14 @@ createProjectElement(
     "custom made deck, and was designed with the guidance of the Basic Mod tutorial. " +
     "This project was done in Java and showcases my proficiency in object oriented programming " +
     "as well as my ability to interpret and utilize a large library of code that I did not write. " +
-    "The remaining work on this project will consist of adding character specific cards and relics, while " +
-    "continuing to manipulate the underlying code written by the Slay the Spire developers.",
+    "Throughout the project, I added character specific cards and relics, while " +
+    "manipulating the underlying code written by the Slay the Spire developers. This " +
+    "project helped give me experience is adjusting a pre-existing codebase.",
   "https://github.com/ccopley04/STS_Mod_Tank",
 );
 
 createProjectElement(
-  5,
+  6,
   "JUNE 2025 - AUGUST 2025",
   "Political Ideology Calculator",
   "Images/politicalIdeologyShowcase.png",
@@ -201,13 +216,11 @@ createProjectElement(
     " The user provides the numeric values, which generate specific " +
     "ideologies, and the Gemini AI API is called to generate an all encompassing political ideology. " +
     "This project was made with JavaScript, HTML, and CSS and implements coding concepts such as binary trees, API usage, " +
-    "and interpreting multi-dimensional data. The remaining updates I will continue to add are" +
-    " increasingly specific political ideology to grant the user more specificity.",
+    "and interpreting multi-dimensional data.",
   "https://github.com/ccopley04/PoliticalIdeologyCalculator",
-  "https://ccopley04.github.io/PoliticalIdeologyCalculator/",
 );
 createProjectElement(
-  6,
+  7,
   "JANUARY 2025 - MAY 2025",
   "Mourning Brew",
   "Images/mourningBrew.png",
@@ -218,10 +231,9 @@ createProjectElement(
     "characters. Additionally, I worked on the mini games, most notably I solo designed a rhythm based, baking simulation for the early game content.",
   "https://github.com/cpeng87/Untitled-Ghost-Game",
   "https://cpeng8.itch.io/mourning-brew",
-  "./Projects/Build 7.22.zip",
 );
 createProjectElement(
-  7,
+  8,
   "APRIL 2025 - MAY 2025",
   "Notes Application",
   "./Images/notesApplicationPic.png",
@@ -236,7 +248,7 @@ createProjectElement(
   "./Projects/NotesApplication.zip",
 );
 createProjectElement(
-  8,
+  9,
   "AUGUST 2024 - NOVEMBER 2024",
   "Humanities Website",
   "./Images/humanitiesWebsitePic.png",
@@ -247,4 +259,16 @@ createProjectElement(
     "members and ensured all the needed work was completed and I worked to define the creative vision for the entire project.",
   "",
   "https://humn2010group2.weebly.com/",
+);
+createProjectElement(
+  10,
+  "JANUARY 2024 - MAY 2024",
+  "Automated Scheduling Processor",
+  "./Images/schedulerPic.png",
+  "This project is an automated scheduling tool created in Python. " +
+    "The project includes a three section data pipeline whose purpose is to receive, parse, and display data involving my calendar." +
+    "The pipepline using the Outlook API to collect emails from specific addresses, scan the emails for my scheduling times, and parse them into " +
+    "managable pieces of data. Finally, it calls the Google Calendar API to create events in my personal calendar." +
+    " This process runs every week completely autonomously and, through creating it, I gained experience with " +
+    "working with API calls and manipulating data.",
 );
