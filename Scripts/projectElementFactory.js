@@ -12,7 +12,7 @@ function confirmDownload(linkElement, gameName, link) {
     event.preventDefault();
 
     const userConfirmed = confirm(
-      "Do you want to download the current build of " + gameName + "?"
+      "Do you want to download the current build of " + gameName + "?",
     );
 
     if (userConfirmed) {
@@ -33,7 +33,7 @@ function createProjectElement(
   text = "",
   codebaseLink = "",
   showcaseLink = "",
-  download = ""
+  download = "",
 ) {
   //Creates the all encompassing element
   const projectDiv = document.createElement("div");
@@ -45,7 +45,8 @@ function createProjectElement(
   const title = document.createElement("div");
   title.className = "title";
   title.textContent = titleText == "" ? "Project " + pos : titleText;
-  title.style = "height:fit-content; width:fit-content; color:#3b82f6; font-weight:700;";
+  title.style =
+    "height:fit-content; width:fit-content; color:#3b82f6; font-weight:700;";
   projectDiv.append(title);
 
   //Create a date with the parameter dateText, add it to the project element
@@ -138,33 +139,7 @@ function createProjectElement(
 //Use the constructor function to create 7 projects
 createProjectElement(
   1,
-  "JULY 2025 - PRESENT",
-  "Coding Portfolio",
-  "/Images/codingPortfolioShowcase.png",
-  "This website acts as my personal coding portfolio that showcases my coding projects and directs users to their respective codebases." +
-    " I created this website using my working knowledge of JavaScript, HTML, and CSS. " +
-    "This project specifically utilizes my proficiency with front end development while also serving as an accessible gateway to my numerous coding works. " +
-    "I will update it with features and projects going forward so it remains an up to date showcase of my proficiencies.",
-  "https://github.com/ccopley04/ccopley04.github.io",
-  "https://ccopley04.github.io/"
-);
-createProjectElement(
-  2,
-  "MAY 2025 - PRESENT",
-  "Slay The Spire Mod",
-  "./Images/stsModPic.png",
-  "This project is a character mod for the deck building game Slay the Spire. " +
-    "This mod includes my own custom character for the game, along with the character's " +
-    "custom made deck, and was designed with the guidance of the Basic Mod tutorial. " +
-    "This project was done in Java and showcases my proficiency in object oriented programming " +
-    "as well as my ability to interpret and utilize a large library of code that I did not write. " +
-    "The remaining work on this project will consist of adding character specific cards and relics, while " +
-    "continuing to manipulate the underlying code written by the Slay the Spire developers.",
-  "https://github.com/ccopley04/STS_Mod_Tank"
-);
-createProjectElement(
-  3,
-  "JANUARY 2025 - PRESENT",
+  "JANUARY 2025 - MAY 2026",
   "Electronic ARTrium",
   "./Images/beeMyGuidePic.png",
   "This project is a series of works with the multi-disciplinary team Electronic ARTrium. " +
@@ -174,12 +149,11 @@ createProjectElement(
     " Additionally, I am currently working as the team lead of the Creative Ideation subteam, working " +
     "to create and plan for the next exhibit to be announced soon.",
   "https://github.gatech.edu/VIP-Electronic-Artrium",
-  "https://electronicartrium.ece.gatech.edu/bee-my-guide/"
+  "https://electronicartrium.ece.gatech.edu/bee-my-guide/",
 );
-
 createProjectElement(
-  4,
-  "OCTOBER 2024 - PRESENT",
+  2,
+  "OCTOBER 2024 - JANUARY 2026",
   "3 2 1...Draw!",
   "./Images/threeTwoOneDrawPic.png",
   "3 2 1...Draw! is my own indie game that I am currently developing as the Software Engineering Director and Team Lead." +
@@ -189,8 +163,35 @@ createProjectElement(
     "I have also written a thorough game design document that " +
     "is used to onboard other members for development.",
   "https://github.com/ccopley04/ThreeTwoOneDraw",
-  "https://docs.google.com/document/d/1XyJsGtp7-YXZqh4WxrxR8-FoTENTwVMhkC44NEyeQkA/edit?usp=sharing"
+  "https://docs.google.com/document/d/1XyJsGtp7-YXZqh4WxrxR8-FoTENTwVMhkC44NEyeQkA/edit?usp=sharing",
 );
+createProjectElement(
+  3,
+  "JULY 2025 - SEPTEMBER 2025",
+  "Coding Portfolio",
+  "/Images/codingPortfolioShowcase.png",
+  "This website acts as my personal coding portfolio that showcases my coding projects and directs users to their respective codebases." +
+    " I created this website using my working knowledge of JavaScript, HTML, and CSS. " +
+    "This project specifically utilizes my proficiency with front end development while also serving as an accessible gateway to my numerous coding works. " +
+    "I will update it with features and projects going forward so it remains an up to date showcase of my proficiencies.",
+  "https://github.com/ccopley04/ccopley04.github.io",
+  "https://ccopley04.github.io/",
+);
+createProjectElement(
+  4,
+  "MAY 2025 - AUGUST 2025",
+  "Slay The Spire Mod",
+  "./Images/stsModPic.png",
+  "This project is a character mod for the deck building game Slay the Spire. " +
+    "This mod includes my own custom character for the game, along with the character's " +
+    "custom made deck, and was designed with the guidance of the Basic Mod tutorial. " +
+    "This project was done in Java and showcases my proficiency in object oriented programming " +
+    "as well as my ability to interpret and utilize a large library of code that I did not write. " +
+    "The remaining work on this project will consist of adding character specific cards and relics, while " +
+    "continuing to manipulate the underlying code written by the Slay the Spire developers.",
+  "https://github.com/ccopley04/STS_Mod_Tank",
+);
+
 createProjectElement(
   5,
   "JUNE 2025 - AUGUST 2025",
@@ -203,7 +204,7 @@ createProjectElement(
     "and interpreting multi-dimensional data. The remaining updates I will continue to add are" +
     " increasingly specific political ideology to grant the user more specificity.",
   "https://github.com/ccopley04/PoliticalIdeologyCalculator",
-  "https://ccopley04.github.io/PoliticalIdeologyCalculator/"
+  "https://ccopley04.github.io/PoliticalIdeologyCalculator/",
 );
 createProjectElement(
   6,
@@ -217,7 +218,7 @@ createProjectElement(
     "characters. Additionally, I worked on the mini games, most notably I solo designed a rhythm based, baking simulation for the early game content.",
   "https://github.com/cpeng87/Untitled-Ghost-Game",
   "https://cpeng8.itch.io/mourning-brew",
-  "./Projects/Build 7.22.zip"
+  "./Projects/Build 7.22.zip",
 );
 createProjectElement(
   7,
@@ -232,7 +233,7 @@ createProjectElement(
     "writing and event handling. ",
   "",
   "",
-  "./Projects/NotesApplication.zip"
+  "./Projects/NotesApplication.zip",
 );
 createProjectElement(
   8,
@@ -245,5 +246,5 @@ createProjectElement(
     "aesthetic web page that clearly showcases our group's progress and discussions. Additionally, as the Team Lead, I managed the " +
     "members and ensured all the needed work was completed and I worked to define the creative vision for the entire project.",
   "",
-  "https://humn2010group2.weebly.com/"
+  "https://humn2010group2.weebly.com/",
 );
