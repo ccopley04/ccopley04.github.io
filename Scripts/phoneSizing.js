@@ -4,7 +4,7 @@ let phoneSize = window.innerWidth < window.innerHeight;
 //Create a div to hold the headshot
 const headShot = document.createElement("img");
 headShot.id = "headshot";
-headShot.src = "./Images/seriousHeadshot.JPG";
+headShot.src = "./Images/headshot.jpg";
 
 if (phoneSize) {
   //Add the headshot
